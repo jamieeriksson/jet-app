@@ -10,7 +10,7 @@ module.exports = {
     container: {
       center: true,
     },
-    backgroundColor: (theme) => ({
+    colors: {
       red: "#E76F51",
       yellow: "#E9C46A",
       teal: {
@@ -21,6 +21,8 @@ module.exports = {
       white: "#ffffff",
       transparent: "transparent",
       gray: {
+        light: "#EEEEEE",
+        dark: "#313131",
         100: "#f7fafc",
         200: "#edf2f7",
         300: "#e2e8f0",
@@ -31,7 +33,7 @@ module.exports = {
         800: "#2d3748",
         900: "#1a202c",
       },
-    }),
+    },
     filter: {
       // defaults to {}
       none: "none",
@@ -42,7 +44,7 @@ module.exports = {
     backdropFilter: {
       // defaults to {}
       none: "none",
-      blur: "blur(3px)",
+      blur: "blur(2px)",
     },
     extend: {
       spacing: {

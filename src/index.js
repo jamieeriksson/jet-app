@@ -3,7 +3,9 @@ import ReactDOM from "react-dom";
 import "./tailwind.output.css";
 import * as serviceWorker from "./serviceWorker";
 import logo from "./assets/logo.svg";
-import throwingHeader from "./assets/throwing3-crop.png";
+import throwingHeader from "./assets/header-photo-2.png";
+import upperTriangles from "./assets/upper-triangles.svg";
+import lowerTriangles from "./assets/lower-triangles.svg";
 
 class NavItem extends React.Component {
   render() {
@@ -94,7 +96,7 @@ class Header extends React.Component {
             alt="Three women throwing frisbee"
           />
           <div
-            className="absolute inset-0 h-full bg-gradient-to-br from-teal-900 via-black to-transparent opacity-25"
+            className="absolute inset-0 h-full bg-gradient-to-br from-gray-800 to-transparent opacity-25"
             id="header-gradient"
           ></div>
           <div
@@ -115,9 +117,9 @@ class Header extends React.Component {
             </h2>
           </div>
         </div>
-        <div className="flex justify-center z-10 max-w-6xl w-full self-center md:ml-64 md:justify-start">
-          <button className="-mt-4 w-56 bg-teal-dark">
-            <h3 className="font-title text-2xl uppercase p-3 text-gray-light text-center">
+        <div className="flex justify-center z-10 max-w-6xl mb-24 w-full self-center md:ml-64 md:justify-start">
+          <button className="-mt-4 w-48 bg-teal-dark">
+            <h3 className="font-title text-xl uppercase p-3 text-gray-200 text-center">
               Sign Up
             </h3>
           </button>
@@ -127,12 +129,47 @@ class Header extends React.Component {
   }
 }
 
+class PageBody extends React.Component {
+  render() {
+    return (
+      <div>
+        <img src={upperTriangles} className="w-screen" />
+        <div className="bg-gray-dark">
+          <div className="p-6 max-w-6xl container font-sans text-gray-light">
+            <h3 className="uppercase font-light">Our Philosophy</h3>
+            <h4 className="text-2xl">
+              A technique driven and fundamentals focused approach to throwing
+              skills development.
+            </h4>
+            <p className="font-light">
+              Our approach to throwing training is to come up with unique and
+              creative drills that bias your body into using better technique.
+              One of the biggest downfalls of the current approach to training
+              and learning how to throw in ultimate is that it is not nuanced
+              enough. In any other sport, people spend hours focusing on,
+              working, and refining nuanced aspects of their technique, but in
+              ultimate the status quo seems to be, “just throw a lot and you’ll
+              figure it out”. Considering that most players aren’t even taught
+              proper mechanics to begin with, this means several players spend
+              hours practicing and solidifying poor throwing mechanic habits.
+              We’re here to change that. Our drills are designed to train proper
+              technique and help you reach your potential as a thrower.
+            </p>
+          </div>
+        </div>
+        <img src={lowerTriangles} className="w-screen" />
+      </div>
+    );
+  }
+}
+
 class Page extends React.Component {
   render() {
     return (
-      <div className="bg-gray-200">
+      <div className="bg-gray-light min-h-screen">
         <NavBar />
         <Header />
+        <PageBody />
       </div>
     );
   }
