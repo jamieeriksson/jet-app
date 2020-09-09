@@ -100,7 +100,7 @@ class Header extends React.Component {
             id="header-gradient"
           ></div>
           <div
-            className="absolute inset-0 h-full backdrop-blur"
+            className="absolute inset-0 h-full backdrop-blur-med md:backdrop-blur-light"
             id="header-background-blur"
           ></div>
           <div

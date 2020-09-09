@@ -44,7 +44,8 @@ module.exports = {
     backdropFilter: {
       // defaults to {}
       none: "none",
-      blur: "blur(2px)",
+      "blur-light": "blur(2px)",
+      "blur-med": "blur(4px)",
     },
     extend: {
       spacing: {
