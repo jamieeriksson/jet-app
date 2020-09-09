@@ -11,7 +11,9 @@ class NavItem extends React.Component {
   render() {
     return (
       <div
-        className={`${this.props.bg} flex align-center justify-center md:w-28`}
+        className={`${this.props.bg} ${
+          this.props.transparent ? "bg-opacity-50" : ""
+        } flex align-center justify-center hover:bg-opacity-100 md:w-28`}
         id={`${this.props.id}`}
       >
         <a
@@ -28,8 +30,29 @@ class NavItem extends React.Component {
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { menuIsOpen: false };
+    this.state = { menuIsOpen: false, scrolledDown: false };
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
+  handleScroll(event) {
+    if (window.scrollY > 150) {
+      this.setState({
+        scrolledDown: true,
+      });
+    } else {
+      this.setState({
+        scrolledDown: false,
+      });
+    }
   }
 
   toggleMenu() {
@@ -38,47 +61,57 @@ class NavBar extends React.Component {
 
   render() {
     return (
-      <nav className="sticky inset-0 h-16 max-w-6xl container z-50 md:h-12 md:flex md:justify-end">
-        <img
-          src={logo}
-          className="inline h-full md:absolute md:left-0 md:pl-4 xl:pl-8"
-          alt="logo"
-        />
-        <button
-          className="inline absolute right-0 p-4 md:hidden"
-          onClick={this.toggleMenu}
-        >
-          <svg viewBox="0 0 100 80" width="40" height="40">
-            <rect width="100" height="8"></rect>
-            <rect y="30" width="100" height="8"></rect>
-            <rect y="60" width="100" height="8"></rect>
-          </svg>
-        </button>
-        <div className={`${this.state.menuIsOpen ? "" : "hidden"} md:flex`}>
-          <NavItem
-            id={"nav-link1"}
-            bg={"bg-gray-300"}
-            link={"home"}
-            linkName={"Home"}
+      <nav
+        className={`sticky inset-0 w-screen z-50 bg-gray-light ${
+          this.state.scrolledDown ? "bg-opacity-25" : ""
+        }`}
+      >
+        <div className="relative container mx-auto max-w-6xl h-16 md:h-12 md:flex md:justify-end">
+          <img
+            src={logo}
+            className="inline h-full md:absolute md:left-0 md:pl-4 xl:pl-8"
+            alt="logo"
           />
-          <NavItem
-            id={"nav-link2"}
-            bg={"bg-red"}
-            link={"about"}
-            linkName={"About"}
-          />
-          <NavItem
-            id={"nav-link3"}
-            bg={"bg-yellow"}
-            link={"services"}
-            linkName={"Services"}
-          />
-          <NavItem
-            id={"nav-link4"}
-            bg={"bg-teal-dark"}
-            link={"contact"}
-            linkName={"Contact"}
-          />
+          <button
+            className="inline absolute right-0 p-4 focus:outline-none md:hidden"
+            onClick={this.toggleMenu}
+          >
+            <svg viewBox="0 0 100 80" width="40" height="40">
+              <rect width="100" height="8"></rect>
+              <rect y="30" width="100" height="8"></rect>
+              <rect y="60" width="100" height="8"></rect>
+            </svg>
+          </button>
+          <div className={`${this.state.menuIsOpen ? "" : "hidden"} md:flex`}>
+            <NavItem
+              id={"nav-link1"}
+              bg={"bg-gray-300"}
+              link={"home"}
+              linkName={"Home"}
+              transparent={this.state.scrolledDown}
+            />
+            <NavItem
+              id={"nav-link2"}
+              bg={"bg-red"}
+              link={"about"}
+              linkName={"About"}
+              transparent={this.state.scrolledDown}
+            />
+            <NavItem
+              id={"nav-link3"}
+              bg={"bg-yellow"}
+              link={"services"}
+              linkName={"Services"}
+              transparent={this.state.scrolledDown}
+            />
+            <NavItem
+              id={"nav-link4"}
+              bg={"bg-teal-dark"}
+              link={"contact"}
+              linkName={"Contact"}
+              transparent={this.state.scrolledDown}
+            />
+          </div>
         </div>
       </nav>
     );
