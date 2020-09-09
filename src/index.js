@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./tailwind.output.css";
 import * as serviceWorker from "./serviceWorker";
 import logo from "./assets/logo.svg";
-import throwingHeader from "./assets/throwing2.png";
+import throwingHeader from "./assets/throwing3-crop.png";
 
 class NavItem extends React.Component {
   render() {
@@ -55,7 +55,7 @@ class NavBar extends React.Component {
         <div className={`${this.state.menuIsOpen ? "" : "hidden"} md:flex`}>
           <NavItem
             id={"nav-link1"}
-            bg={"bg-gray"}
+            bg={"bg-gray-300"}
             link={"home"}
             linkName={"Home"}
           />
@@ -87,15 +87,19 @@ class Header extends React.Component {
   render() {
     return (
       <div className="flex flex-col">
-        <div className="overflow-hidden relative h-full flex justify-center">
+        <div className="overflow-hidden relative h-full flex justify-center shadow-custom">
           <img
             src={throwingHeader}
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover object-top shadow-custom"
             alt="Three women throwing frisbee"
           />
           <div
+            className="absolute inset-0 h-full bg-gradient-to-br from-teal-900 via-black to-transparent opacity-25"
+            id="header-gradient"
+          ></div>
+          <div
             className="absolute inset-0 h-full backdrop-blur"
-            id="background-blur"
+            id="header-background-blur"
           ></div>
           <div
             className="relative max-w-6xl w-full ml-5 my-12 md:my-48 md:ml-24"
@@ -126,7 +130,7 @@ class Header extends React.Component {
 class Page extends React.Component {
   render() {
     return (
-      <div className="bg-gray-light">
+      <div className="bg-gray-200">
         <NavBar />
         <Header />
       </div>
