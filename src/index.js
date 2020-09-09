@@ -11,14 +11,14 @@ class NavItem extends React.Component {
   render() {
     return (
       <div
-        className={`${this.props.bg} ${
+        className={`${this.props.bg} transition duration-1000 ease-in-out md:${
           this.props.transparent ? "bg-opacity-50" : ""
-        } flex align-center justify-center hover:bg-opacity-100 md:w-28`}
+        } flex md:w-28`}
         id={`${this.props.id}`}
       >
         <a
           href={`/${this.props.link}`}
-          className="p-3 text-xl uppercase font-light md:text-sm "
+          className={`transition duration-300 ease-in-out md:hover:${this.props.bg} md:w-28 text-center p-3 text-xl uppercase font-light md:text-sm`}
         >
           {this.props.linkName}
         </a>
@@ -62,57 +62,72 @@ class NavBar extends React.Component {
   render() {
     return (
       <nav
-        className={`sticky inset-0 w-screen z-50 bg-gray-light ${
+        className={`fixed inset-0 w-screen z-50 h-16 bg-gray-light md:h-12 md:flex md:${
           this.state.scrolledDown ? "bg-opacity-25" : ""
-        }`}
+        } transition duration-1000 ease-in-out`}
       >
-        <div className="relative container mx-auto max-w-6xl h-16 md:h-12 md:flex md:justify-end">
-          <img
-            src={logo}
-            className="inline h-full md:absolute md:left-0 md:pl-4 xl:pl-8"
-            alt="logo"
+        <div
+          className={`${
+            this.state.scrolledDown ? "bg-opacity-25" : ""
+          } transition duration-1000 ease-in-out md:flex-grow-1 bg-gray-light`}
+        ></div>
+        <img
+          src={logo}
+          className={`md:${
+            this.state.scrolledDown ? "bg-opacity-25" : ""
+          } transition duration-1000 ease-in-out h-full bg-gray-light`}
+          alt="logo"
+        />
+        <div
+          className={`md:${
+            this.state.scrolledDown ? "bg-opacity-25" : ""
+          } transition duration-1000 ease-in-out md:flex-grow-3 bg-gray-light`}
+        ></div>
+        <button
+          className="inline absolute top-0 right-0 p-4 focus:outline-none md:hidden"
+          onClick={this.toggleMenu}
+        >
+          <svg viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="8"></rect>
+            <rect y="30" width="100" height="8"></rect>
+            <rect y="60" width="100" height="8"></rect>
+          </svg>
+        </button>
+        <div className={`${this.state.menuIsOpen ? "" : "hidden"} md:flex`}>
+          <NavItem
+            id={"nav-link1"}
+            bg={"bg-gray-300"}
+            link={"home"}
+            linkName={"Home"}
+            transparent={this.state.scrolledDown}
           />
-          <button
-            className="inline absolute right-0 p-4 focus:outline-none md:hidden"
-            onClick={this.toggleMenu}
-          >
-            <svg viewBox="0 0 100 80" width="40" height="40">
-              <rect width="100" height="8"></rect>
-              <rect y="30" width="100" height="8"></rect>
-              <rect y="60" width="100" height="8"></rect>
-            </svg>
-          </button>
-          <div className={`${this.state.menuIsOpen ? "" : "hidden"} md:flex`}>
-            <NavItem
-              id={"nav-link1"}
-              bg={"bg-gray-300"}
-              link={"home"}
-              linkName={"Home"}
-              transparent={this.state.scrolledDown}
-            />
-            <NavItem
-              id={"nav-link2"}
-              bg={"bg-red"}
-              link={"about"}
-              linkName={"About"}
-              transparent={this.state.scrolledDown}
-            />
-            <NavItem
-              id={"nav-link3"}
-              bg={"bg-yellow"}
-              link={"services"}
-              linkName={"Services"}
-              transparent={this.state.scrolledDown}
-            />
-            <NavItem
-              id={"nav-link4"}
-              bg={"bg-teal-dark"}
-              link={"contact"}
-              linkName={"Contact"}
-              transparent={this.state.scrolledDown}
-            />
-          </div>
+          <NavItem
+            id={"nav-link2"}
+            bg={"bg-red"}
+            link={"about"}
+            linkName={"About"}
+            transparent={this.state.scrolledDown}
+          />
+          <NavItem
+            id={"nav-link3"}
+            bg={"bg-yellow"}
+            link={"services"}
+            linkName={"Services"}
+            transparent={this.state.scrolledDown}
+          />
+          <NavItem
+            id={"nav-link4"}
+            bg={"bg-teal-dark"}
+            link={"contact"}
+            linkName={"Contact"}
+            transparent={this.state.scrolledDown}
+          />
         </div>
+        <div
+          className={`transition duration-1000 ease-in-out ${
+            this.state.scrolledDown ? "bg-opacity-50" : ""
+          } bg-teal-dark md:flex-grow-1`}
+        ></div>
       </nav>
     );
   }
@@ -199,8 +214,9 @@ class PageBody extends React.Component {
 class Page extends React.Component {
   render() {
     return (
-      <div className="bg-gray-light min-h-screen">
+      <div className="bg-gray-light min-h-screen overflow-x-hidden">
         <NavBar />
+        <div className="w-screen h-16 md:h-12 bg-light-gray"></div>
         <Header />
         <PageBody />
       </div>

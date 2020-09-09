@@ -35,14 +35,18 @@ module.exports = {
       },
     },
     filter: {
-      // defaults to {}
       none: "none",
       grayscale: "grayscale(1)",
       invert: "invert(1)",
       sepia: "sepia(1)",
     },
+    flexGrow: {
+      0: 0,
+      1: 1,
+      2: 2,
+      3: 3,
+    },
     backdropFilter: {
-      // defaults to {}
       none: "none",
       "blur-light": "blur(2px)",
       "blur-med": "blur(4px)",
@@ -65,8 +69,8 @@ module.exports = {
     },
   },
   variants: {
-    filter: ["responsive"], // defaults to ['responsive']
-    backdropFilter: ["responsive"], // defaults to ['responsive']
+    filter: ["responsive"],
+    backdropFilter: ["responsive"],
   },
   plugins: [require("tailwindcss-filters")],
 };
