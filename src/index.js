@@ -6,6 +6,7 @@ import logo from "./assets/logo.svg";
 import throwingHeader from "./assets/header-photo-2.png";
 import upperTriangles from "./assets/upper-triangles.svg";
 import lowerTriangles from "./assets/lower-triangles.svg";
+import throwingVideo from "./assets/slomo-throwing.mov";
 
 class NavItem extends React.Component {
   render() {
@@ -81,8 +82,10 @@ class NavBar extends React.Component {
         <div
           className={`md:${
             this.state.scrolledDown ? "bg-opacity-25" : ""
-          } transition duration-1000 ease-in-out md:flex-grow-3 bg-gray-light`}
-        ></div>
+          } transition duration-1000 ease-in-out md:flex-grow-3 bg-gray-light uppercase font-light`}
+        >
+          <h2 className="mt-4 ml-1">Jamie Eriksson Throwing</h2>
+        </div>
         <button
           className="inline absolute top-0 right-0 p-4 focus:outline-none md:hidden"
           onClick={this.toggleMenu}
@@ -138,17 +141,26 @@ class Header extends React.Component {
     return (
       <div className="flex flex-col">
         <div className="overflow-hidden relative h-full flex justify-center shadow-custom">
+          <video
+            autoPlay
+            loop
+            muted
+            poster={throwingHeader}
+            className="absolute inset-0 w-full h-full object-cover object-center shadow-custom hidden md:block"
+          >
+            <source src={throwingVideo} type="video/mp4"></source>
+          </video>
           <img
             src={throwingHeader}
-            className="absolute inset-0 w-full h-full object-cover object-top shadow-custom"
+            className="absolute inset-0 w-full h-full object-cover object-top shadow-custom md:hidden"
             alt="Three women throwing frisbee"
           />
           <div
-            className="absolute inset-0 h-full bg-gradient-to-br from-gray-800 to-transparent opacity-25"
+            className="absolute inset-0 h-full bg-gradient-to-br from-white via-gray-light to-gray-dark opacity-25"
             id="header-gradient"
           ></div>
           <div
-            className="absolute inset-0 h-full backdrop-blur-med md:backdrop-blur-light"
+            className="absolute inset-0 h-full backdrop-blur-med md:backdrop-blur-med"
             id="header-background-blur"
           ></div>
           <div
