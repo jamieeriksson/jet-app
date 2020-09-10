@@ -7,6 +7,9 @@ import throwingHeader from "./assets/header-photo-2.png";
 import upperTriangles from "./assets/upper-triangles.svg";
 import lowerTriangles from "./assets/lower-triangles.svg";
 import throwingVideo from "./assets/slomo-throwing.mov";
+import instagram from "./assets/icons8-instagram.svg";
+import twitter from "./assets/icons8-twitter.svg";
+import facebook from "./assets/icons8-facebook.svg";
 
 class NavItem extends React.Component {
   render() {
@@ -223,6 +226,73 @@ class PageBody extends React.Component {
   }
 }
 
+class Footer extends React.Component {
+  render() {
+    return (
+      <div className="w-screen bg-teal-dark">
+        <div className="container max-w-4xl flex justify-center">
+          {/* <img src={logo} className="h-16 self-center opacity-50" alt="logo" /> */}
+          <ul className="list-none font-light text-sm text-gray-600 p-10">
+            <li className="text-gray-500 font-normal text-sm uppercase mb-1">
+              Navigation
+            </li>
+            <li>
+              <a href="/home" className="hover:text-gray-400">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="/about" className="hover:text-gray-400">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="/services" className="hover:text-gray-400">
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="/contact" className="hover:text-gray-400">
+                Contact
+              </a>
+            </li>
+          </ul>
+          <ul className="list-none font-light text-sm text-gray-600 p-10 pl-16">
+            <li className="text-gray-500 font-normal text-sm uppercase mb-2">
+              Social
+            </li>
+            <li className="mt-1 opacity-50 hover:opacity-100">
+              <a href="https://www.instagram.com/jamieriksson/?hl=en">
+                <img src={instagram} className="h-6 pl-1"></img>
+              </a>
+            </li>
+            <li className="mt-1 opacity-50 hover:opacity-100">
+              <a href="https://twitter.com/jamieriksson">
+                <img src={twitter} className="h-6 pl-1"></img>
+              </a>
+            </li>
+            <li className="mt-1 opacity-50 hover:opacity-100">
+              <a href="https://www.facebook.com/jamie.eriksson.5/">
+                <img src={facebook} className="h-6 pl-1"></img>
+              </a>
+            </li>
+          </ul>
+          <ul className="list-none font-light text-sm text-gray-600 p-10 pl-16">
+            <li className="text-gray-500 font-normal text-sm uppercase mb-1">
+              Contact
+            </li>
+            <li>
+              <a href="/home" className="hover:text-gray-400">
+                contact@jethrowing.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    );
+  }
+}
+
 class Page extends React.Component {
   render() {
     return (
@@ -231,6 +301,7 @@ class Page extends React.Component {
         <div className="w-screen h-16 md:h-12 bg-light-gray"></div>
         <Header />
         <PageBody />
+        <Footer />
       </div>
     );
   }
