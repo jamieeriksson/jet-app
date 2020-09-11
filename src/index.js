@@ -203,12 +203,20 @@ class PageBody extends React.Component {
   render() {
     return (
       <div>
-        <img
+        {/* <img
           src={lowerTriangles}
-          className="w-screen transform rotate-180"
+          className="w-screen transform rotate-180 z-10"
           alt=""
-        />
-        <div className="bg-gray-dark -mt-2">
+        /> */}
+        <svg
+          viewBox="0 0 1440 177"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M1440 177L5.07832e-05 86V177H1440Z" fill="#314E4A" />
+          <path d="M0 177L1440 0V177H0Z" fill="#313131" />
+        </svg>
+        <div className="bg-gray-dark -mt-2 z-0">
           <div className="p-6 max-w-6xl container font-sans text-gray-light">
             <h3 className="uppercase font-light">Our Philosophy</h3>
             <h4 className="text-2xl">
@@ -231,7 +239,14 @@ class PageBody extends React.Component {
             </p>
           </div>
         </div>
-        <img src={lowerTriangles} className="w-screen -mt-2" alt="" />
+        <svg
+          viewBox="0 0 1440 177"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 5.75185e-06L1440 115V5.75185e-06H0Z" fill="#314E4A" />
+          <path d="M1440 0L0 177V0H1440Z" fill="#313131" />
+        </svg>
       </div>
     );
   }
