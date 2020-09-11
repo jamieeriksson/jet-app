@@ -1,14 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "./tailwind.output.css";
 
 import throwingPlaceholder from "./assets/placeholder.png";
 import throwingVideo from "./assets/Slomo-Throwing-Short-6.m4v";
-import instagram from "./assets/icons8-instagram.svg";
-import twitter from "./assets/icons8-twitter.svg";
-import facebook from "./assets/icons8-facebook.svg";
+import Footer from "./footer.js";
 
-class Header extends React.Component {
+class HomeHeader extends React.Component {
   render() {
     return (
       <div className="flex flex-col">
@@ -29,15 +26,15 @@ class Header extends React.Component {
           />
           <div
             className="absolute inset-0 h-full bg-gradient-to-br from-white via-gray-200 to-black opacity-25"
-            id="header-gradient"
+            id="Homeheader-gradient"
           ></div>
           <div
             className="absolute inset-0 h-full backdrop-blur-med md:backdrop-blur-lg"
-            id="header-background-blur"
+            id="Homeheader-background-blur"
           ></div>
           <div
             className="relative max-w-6xl w-full ml-5 my-12 md:my-48 md:ml-24"
-            id="header-text-container"
+            id="Homeheader-text-container"
           >
             <div className="w-32 h-6 bg-teal"></div>
             <h1 className="font-title text-4xl md:text-5xl uppercase text-shadow-sm">
@@ -109,90 +106,12 @@ class PageBody extends React.Component {
   }
 }
 
-class Footer extends React.Component {
-  render() {
-    return (
-      <div className="w-screen bg-teal-dark">
-        <div className="container max-w-4xl flex flex-wrap justify-center">
-          <ul className="list-none font-light text-sm text-gray-600 p-3 md:p-10">
-            <li className="text-gray-500 font-normal text-sm uppercase mb-1">
-              Navigation
-            </li>
-            <li>
-              <a href="/" className="hover:text-gray-400">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="/about" className="hover:text-gray-400">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="/services" className="hover:text-gray-400">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="/contact" className="hover:text-gray-400">
-                Contact
-              </a>
-            </li>
-          </ul>
-          <ul className="list-none font-light text-sm text-gray-600 p-3 md:p-10 md:pl-16">
-            <li className="text-gray-500 font-normal text-sm uppercase mb-2">
-              Social
-            </li>
-            <li className="mt-1 opacity-50 hover:opacity-100">
-              <a href="https://www.instagram.com/jamieriksson/?hl=en">
-                <img
-                  src={instagram}
-                  className="h-6 pl-1"
-                  alt="instagram logo"
-                ></img>
-              </a>
-            </li>
-            <li className="mt-1 opacity-50 hover:opacity-100">
-              <a href="https://twitter.com/jamieriksson">
-                <img
-                  src={twitter}
-                  className="h-6 pl-1"
-                  alt="twitter logo"
-                ></img>
-              </a>
-            </li>
-            <li className="mt-1 opacity-50 hover:opacity-100">
-              <a href="https://www.facebook.com/jamie.eriksson.5/">
-                <img
-                  src={facebook}
-                  className="h-6 pl-1"
-                  alt="facebook logo"
-                ></img>
-              </a>
-            </li>
-          </ul>
-          <ul className="list-none font-light text-sm text-gray-600 p-3 md:p-10 md:pl-16">
-            <li className="text-gray-500 font-normal text-sm uppercase mb-1">
-              Contact
-            </li>
-            <li>
-              <a href="/home" className="hover:text-gray-400">
-                contact@jethrowing.com
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    );
-  }
-}
-
 class Home extends React.Component {
   render() {
     return (
       <div className="bg-gray-light min-h-screen overflow-x-hidden flex flex-col">
         <div className="w-screen h-16 md:h-12 bg-light-gray"></div>
-        <Header />
+        <HomeHeader />
         <PageBody />
         <div className="flex-grow-1 h-16"></div>
         <Footer />
