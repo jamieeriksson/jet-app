@@ -89,7 +89,7 @@ class NavBar extends React.Component {
             this.state.scrolledDown ? "bg-opacity-25" : ""
           } transition duration-1000 ease-in-out md:flex-grow-3 bg-gray-light uppercase font-light`}
         >
-          <h2 className="mt-4 ml-1">Jamie Eriksson Throwing</h2>
+          <h2 className="hidden mt-4 ml-1 md:block">Jamie Eriksson Throwing</h2>
         </div>
         <button
           className="inline absolute top-0 right-0 p-4 focus:outline-none md:hidden"
