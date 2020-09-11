@@ -23,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 src/tailwind.output.css
+src/assets/header-video.mov
+src/assets/slomo-throwing.mov
