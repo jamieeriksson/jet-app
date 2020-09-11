@@ -75,13 +75,15 @@ class NavBar extends React.Component {
             this.state.scrolledDown ? "bg-opacity-25" : ""
           } transition duration-1000 ease-in-out md:flex-grow-1 bg-gray-light`}
         ></div>
-        <img
-          src={logo}
-          className={`md:${
-            this.state.scrolledDown ? "bg-opacity-25" : ""
-          } transition duration-1000 ease-in-out h-full bg-gray-light`}
-          alt="logo"
-        />
+        <a href="/">
+          <img
+            src={logo}
+            className={`md:${
+              this.state.scrolledDown ? "bg-opacity-25" : ""
+            } transition duration-1000 ease-in-out h-full bg-gray-light`}
+            alt="logo"
+          />
+        </a>
         <div
           className={`md:${
             this.state.scrolledDown ? "bg-opacity-25" : ""
@@ -103,7 +105,7 @@ class NavBar extends React.Component {
           <NavItem
             id={"nav-link1"}
             bg={"bg-gray-300"}
-            link={"home"}
+            link={""}
             linkName={"Home"}
             transparent={this.state.scrolledDown}
           />
@@ -241,7 +243,7 @@ class Footer extends React.Component {
               Navigation
             </li>
             <li>
-              <a href="/home" className="hover:text-gray-400">
+              <a href="/" className="hover:text-gray-400">
                 Home
               </a>
             </li>
