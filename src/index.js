@@ -3,9 +3,7 @@ import ReactDOM from "react-dom";
 import "./tailwind.output.css";
 import * as serviceWorker from "./serviceWorker";
 import logo from "./assets/logo.svg";
-import throwingHeader from "./assets/header-photo-2.png";
 import throwingPlaceholder from "./assets/placeholder.png";
-import upperTriangles from "./assets/upper-triangles.svg";
 import lowerTriangles from "./assets/lower-triangles.svg";
 // import throwingVideo from "./assets/slomo-short-cr45.mov";
 import throwingVideo from "./assets/Slomo-Throwing-Short-6.m4v";
@@ -198,7 +196,11 @@ class PageBody extends React.Component {
   render() {
     return (
       <div>
-        <img src={lowerTriangles} className="w-screen transform rotate-180" />
+        <img
+          src={lowerTriangles}
+          className="w-screen transform rotate-180"
+          alt=""
+        />
         <div className="bg-gray-dark -mt-2">
           <div className="p-6 max-w-6xl container font-sans text-gray-light">
             <h3 className="uppercase font-light">Our Philosophy</h3>
@@ -222,7 +224,7 @@ class PageBody extends React.Component {
             </p>
           </div>
         </div>
-        <img src={lowerTriangles} className="w-screen" />
+        <img src={lowerTriangles} className="w-screen" alt="" />
       </div>
     );
   }
