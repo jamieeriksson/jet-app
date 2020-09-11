@@ -198,8 +198,8 @@ class PageBody extends React.Component {
   render() {
     return (
       <div>
-        <img src={upperTriangles} className="w-screen" />
-        <div className="bg-gray-dark">
+        <img src={lowerTriangles} className="w-screen transform rotate-180" />
+        <div className="bg-gray-dark -mt-2">
           <div className="p-6 max-w-6xl container font-sans text-gray-light">
             <h3 className="uppercase font-light">Our Philosophy</h3>
             <h4 className="text-2xl">
