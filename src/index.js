@@ -232,9 +232,9 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="w-screen bg-teal-dark">
-        <div className="container max-w-4xl flex justify-center">
+        <div className="container max-w-4xl flex flex-wrap justify-center">
           {/* <img src={logo} className="h-16 self-center opacity-50" alt="logo" /> */}
-          <ul className="list-none font-light text-sm text-gray-600 p-10">
+          <ul className="list-none font-light text-sm text-gray-600 p-3 md:p-10">
             <li className="text-gray-500 font-normal text-sm uppercase mb-1">
               Navigation
             </li>
@@ -259,7 +259,7 @@ class Footer extends React.Component {
               </a>
             </li>
           </ul>
-          <ul className="list-none font-light text-sm text-gray-600 p-10 pl-16">
+          <ul className="list-none font-light text-sm text-gray-600 p-3 md:p-10 md:pl-16">
             <li className="text-gray-500 font-normal text-sm uppercase mb-2">
               Social
             </li>
@@ -279,7 +279,7 @@ class Footer extends React.Component {
               </a>
             </li>
           </ul>
-          <ul className="list-none font-light text-sm text-gray-600 p-10 pl-16">
+          <ul className="list-none font-light text-sm text-gray-600 p-3 md:p-10 md:pl-16">
             <li className="text-gray-500 font-normal text-sm uppercase mb-1">
               Contact
             </li>
@@ -298,11 +298,12 @@ class Footer extends React.Component {
 class Page extends React.Component {
   render() {
     return (
-      <div className="bg-gray-light min-h-screen overflow-x-hidden">
+      <div className="bg-gray-light min-h-screen overflow-x-hidden flex flex-col">
         <NavBar />
         <div className="w-screen h-16 md:h-12 bg-light-gray"></div>
         <Header />
         <PageBody />
+        <div className="flex-grow-1 h-16"></div>
         <Footer />
       </div>
     );
