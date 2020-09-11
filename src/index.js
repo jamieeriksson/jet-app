@@ -267,17 +267,29 @@ class Footer extends React.Component {
             </li>
             <li className="mt-1 opacity-50 hover:opacity-100">
               <a href="https://www.instagram.com/jamieriksson/?hl=en">
-                <img src={instagram} className="h-6 pl-1"></img>
+                <img
+                  src={instagram}
+                  className="h-6 pl-1"
+                  alt="instagram logo"
+                ></img>
               </a>
             </li>
             <li className="mt-1 opacity-50 hover:opacity-100">
               <a href="https://twitter.com/jamieriksson">
-                <img src={twitter} className="h-6 pl-1"></img>
+                <img
+                  src={twitter}
+                  className="h-6 pl-1"
+                  alt="twitter logo"
+                ></img>
               </a>
             </li>
             <li className="mt-1 opacity-50 hover:opacity-100">
               <a href="https://www.facebook.com/jamie.eriksson.5/">
-                <img src={facebook} className="h-6 pl-1"></img>
+                <img
+                  src={facebook}
+                  className="h-6 pl-1"
+                  alt="facebook logo"
+                ></img>
               </a>
             </li>
           </ul>
