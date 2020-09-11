@@ -4,9 +4,11 @@ import "./tailwind.output.css";
 import * as serviceWorker from "./serviceWorker";
 import logo from "./assets/logo.svg";
 import throwingHeader from "./assets/header-photo-2.png";
+import throwingPlaceholder from "./assets/placeholder.png";
 import upperTriangles from "./assets/upper-triangles.svg";
 import lowerTriangles from "./assets/lower-triangles.svg";
-import throwingVideo from "./assets/slomo-throwing.mov";
+// import throwingVideo from "./assets/slomo-short-cr45.mov";
+import throwingVideo from "./assets/Slomo-Throwing-Short-6.m4v";
 import instagram from "./assets/icons8-instagram.svg";
 import twitter from "./assets/icons8-twitter.svg";
 import facebook from "./assets/icons8-facebook.svg";
@@ -148,22 +150,22 @@ class Header extends React.Component {
             autoPlay
             loop
             muted
-            poster={throwingHeader}
+            poster={throwingPlaceholder}
             className="absolute inset-0 w-full h-full object-cover object-center shadow-custom hidden md:block"
           >
             <source src={throwingVideo} type="video/mp4"></source>
           </video>
           <img
-            src={throwingHeader}
+            src={throwingPlaceholder}
             className="absolute inset-0 w-full h-full object-cover object-top shadow-custom md:hidden"
             alt="Three women throwing frisbee"
           />
           <div
-            className="absolute inset-0 h-full bg-gradient-to-br from-white via-gray-light to-gray-dark opacity-25"
+            className="absolute inset-0 h-full bg-gradient-to-br from-white via-gray-200 to-black opacity-25"
             id="header-gradient"
           ></div>
           <div
-            className="absolute inset-0 h-full backdrop-blur-med md:backdrop-blur-med"
+            className="absolute inset-0 h-full backdrop-blur-med md:backdrop-blur-lg"
             id="header-background-blur"
           ></div>
           <div
@@ -171,11 +173,11 @@ class Header extends React.Component {
             id="header-text-container"
           >
             <div className="w-32 h-6 bg-teal"></div>
-            <h1 className="font-title text-4xl md:text-5xl uppercase">
+            <h1 className="font-title text-4xl md:text-5xl uppercase text-shadow-sm">
               Up Your Throwing, <br />
               Up Your Game.
             </h1>
-            <h2 className="text-base font-light md:text-lg">
+            <h2 className="text-base font-light text-shadow-sm md:text-lg">
               The first ultimate frisbee throwing coaching service.
             </h2>
           </div>

@@ -50,6 +50,8 @@ module.exports = {
       none: "none",
       "blur-light": "blur(2px)",
       "blur-med": "blur(4px)",
+      "blur-lg": "blur(6px)",
+      "blur-xl": "blur(8px)",
     },
     extend: {
       spacing: {
@@ -72,5 +74,5 @@ module.exports = {
     filter: ["responsive"],
     backdropFilter: ["responsive"],
   },
-  plugins: [require("tailwindcss-filters")],
+  plugins: [require("tailwindcss-filters"), require("tailwindcss-textshadow")],
 };
