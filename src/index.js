@@ -4,8 +4,6 @@ import "./tailwind.output.css";
 import * as serviceWorker from "./serviceWorker";
 import logo from "./assets/logo.svg";
 import throwingPlaceholder from "./assets/placeholder.png";
-import lowerTriangles from "./assets/lower-triangles.svg";
-// import throwingVideo from "./assets/slomo-short-cr45.mov";
 import throwingVideo from "./assets/Slomo-Throwing-Short-6.m4v";
 import instagram from "./assets/icons8-instagram.svg";
 import twitter from "./assets/icons8-twitter.svg";
@@ -203,11 +201,6 @@ class PageBody extends React.Component {
   render() {
     return (
       <div>
-        {/* <img
-          src={lowerTriangles}
-          className="w-screen transform rotate-180 z-10"
-          alt=""
-        /> */}
         <svg
           viewBox="0 0 1440 177"
           fill="none"
@@ -257,7 +250,6 @@ class Footer extends React.Component {
     return (
       <div className="w-screen bg-teal-dark">
         <div className="container max-w-4xl flex flex-wrap justify-center">
-          {/* <img src={logo} className="h-16 self-center opacity-50" alt="logo" /> */}
           <ul className="list-none font-light text-sm text-gray-600 p-3 md:p-10">
             <li className="text-gray-500 font-normal text-sm uppercase mb-1">
               Navigation
