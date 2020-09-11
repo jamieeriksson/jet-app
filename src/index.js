@@ -22,7 +22,7 @@ class NavItem extends React.Component {
       >
         <a
           href={`/${this.props.link}`}
-          className={`transition duration-300 ease-in-out md:hover:${this.props.bg} md:w-28 text-center p-3 text-xl uppercase font-light md:text-sm`}
+          className={`w-full p-3 text-center text-xl uppercase font-light transition duration-300 ease-in-out md:hover:${this.props.bg} md:w-28 md:text-sm`}
         >
           {this.props.linkName}
         </a>
@@ -75,22 +75,27 @@ class NavBar extends React.Component {
             this.state.scrolledDown ? "bg-opacity-25" : ""
           } transition duration-1000 ease-in-out md:flex-grow-1 bg-gray-light`}
         ></div>
-        <a href="/">
-          <img
-            src={logo}
-            className={`md:${
-              this.state.scrolledDown ? "bg-opacity-25" : ""
-            } transition duration-1000 ease-in-out h-full bg-gray-light`}
-            alt="logo"
-          />
-        </a>
-        <div
+        {/* <div
+          className={`md:${
+            this.state.scrolledDown ? "bg-opacity-25" : ""
+          } transition duration-1000 ease-in-out md:flex-grow-3 bg-gray-light uppercase font-light`}
+        > */}
+        <a
+          href="/"
           className={`md:${
             this.state.scrolledDown ? "bg-opacity-25" : ""
           } transition duration-1000 ease-in-out md:flex-grow-3 bg-gray-light uppercase font-light`}
         >
-          <h2 className="hidden mt-4 ml-1 md:block">Jamie Eriksson Throwing</h2>
-        </div>
+          <img
+            src={logo}
+            className={`md:${
+              this.state.scrolledDown ? "bg-opacity-25" : ""
+            } transition duration-1000 ease-in-out h-full inline`}
+            alt="logo"
+          />
+          <h2 className="hidden ml-1 md:inline">Jamie Eriksson Throwing</h2>
+        </a>
+        {/* </div> */}
         <button
           className="inline absolute top-0 right-0 p-4 focus:outline-none md:hidden"
           onClick={this.toggleMenu}
@@ -226,7 +231,7 @@ class PageBody extends React.Component {
             </p>
           </div>
         </div>
-        <img src={lowerTriangles} className="w-screen" alt="" />
+        <img src={lowerTriangles} className="w-screen -mt-2" alt="" />
       </div>
     );
   }
