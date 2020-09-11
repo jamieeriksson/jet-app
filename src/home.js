@@ -36,7 +36,7 @@ class HomeHeader extends React.Component {
             className="relative max-w-6xl w-full ml-5 my-12 md:my-48 md:ml-24"
             id="Homeheader-text-container"
           >
-            <div className="w-32 h-6 bg-teal"></div>
+            <div className="w-32 h-6 bg-teal-bright"></div>
             <h1 className="font-title text-4xl md:text-5xl uppercase text-shadow-sm">
               Up Your Throwing, <br />
               Up Your Game.
@@ -73,10 +73,7 @@ class PageBody extends React.Component {
         <div className="bg-gray-dark -mt-2 z-0">
           <div className="p-6 max-w-6xl container font-sans text-gray-light">
             <h3 className="uppercase font-light">Our Philosophy</h3>
-            <h4 className="text-2xl">
-              A technique driven and fundamentals focused approach to throwing
-              skills development.
-            </h4>
+            <h4 className="text-2xl">Jamie Eriksson</h4>
             <p className="font-light">
               Our approach to throwing training is to come up with unique and
               creative drills that bias your body into using better technique.

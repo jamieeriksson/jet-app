@@ -58,7 +58,7 @@ class NavBar extends React.Component {
   render() {
     return (
       <nav
-        className={`fixed inset-0 w-screen z-50 h-16 bg-gray-light md:h-12 md:flex md:${
+        className={`fixed inset-0 w-screen h-16 z-50 bg-gray-light md:h-12 md:flex md:${
           this.state.scrolledDown ? "bg-opacity-25" : ""
         } transition duration-1000 ease-in-out`}
       >
@@ -67,23 +67,24 @@ class NavBar extends React.Component {
             this.state.scrolledDown ? "bg-opacity-25" : ""
           } transition duration-1000 ease-in-out md:flex-grow-1 bg-gray-light`}
         ></div>
-        <Link
-          to="/"
+        <div
           className={`md:${
             this.state.scrolledDown ? "bg-opacity-25" : ""
           } transition duration-1000 ease-in-out md:flex-grow-3 bg-gray-light uppercase font-light`}
         >
-          <img
-            src={logo}
-            className={`md:${
-              this.state.scrolledDown ? "bg-opacity-25" : ""
-            } transition duration-1000 ease-in-out h-full inline`}
-            alt="logo"
-          />
-          <h2 className="hidden ml-1 md:inline">Jamie Eriksson Throwing</h2>
-        </Link>
+          <Link to="/">
+            <img
+              src={logo}
+              className={`md:${
+                this.state.scrolledDown ? "bg-opacity-25" : ""
+              } transition duration-1000 ease-in-out h-12 inline`}
+              alt="logo"
+            />
+            <h2 className="hidden ml-1 md:inline">Jamie Eriksson Throwing</h2>
+          </Link>
+        </div>
         <button
-          className="inline absolute top-0 right-0 p-4 focus:outline-none md:hidden"
+          className="inline absolute top-0 right-0 p-2 focus:outline-none md:hidden"
           onClick={this.toggleMenu}
         >
           <svg viewBox="0 0 100 80" width="40" height="40">
