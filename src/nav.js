@@ -77,14 +77,14 @@ class NavBar extends React.Component {
               src={logo}
               className={`md:${
                 this.state.scrolledDown ? "bg-opacity-25" : ""
-              } transition duration-1000 ease-in-out h-12 inline`}
+              } transition duration-1000 ease-in-out h-16 md:h-12 inline`}
               alt="logo"
             />
             <h2 className="hidden ml-1 md:inline">Jamie Eriksson Throwing</h2>
           </Link>
         </div>
         <button
-          className="inline absolute top-0 right-0 p-2 focus:outline-none md:hidden"
+          className="inline absolute top-0 right-0 p-4 focus:outline-none md:hidden"
           onClick={this.toggleMenu}
         >
           <svg viewBox="0 0 100 80" width="40" height="40">
