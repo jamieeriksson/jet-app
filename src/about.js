@@ -2,6 +2,8 @@ import React from "react";
 import Footer from "./footer.js";
 import "./tailwind.output.css";
 import logo from "./assets/logo.svg";
+import jamiePhoto from "./assets/jamie-photo.png";
+import harrisonPhoto from "./assets/harrison-photo.png";
 
 function ColorHeader() {
   return (
@@ -38,6 +40,24 @@ function Title() {
   );
 }
 
+class TeamMemberDesc extends React.Component {
+  render() {
+    return (
+      <div className="flex flex-col mb-6 -ml-2 md:flex-row md:mt-2">
+        <img
+          src={this.props.photo}
+          alt={`Profile photo of ${this.props.name}`}
+          className="inline-block h-64"
+        />
+        <div className="flex flex-col ml-4 justify-center">
+          <h4 className="text-2xl">{this.props.name}</h4>
+          <p className="font-light">{this.props.teamMemberDesc}</p>
+        </div>
+      </div>
+    );
+  }
+}
+
 function AboutContent() {
   return (
     <div className="z-10">
@@ -55,25 +75,17 @@ function AboutContent() {
         </div>
         <div className="bg-gray-dark -mt-2 z-0">
           <div className="p-6 max-w-6xl container font-sans text-gray-light">
-            <h3 className="uppercase font-light">Our Philosophy</h3>
-            <h4 className="text-2xl">
-              A technique driven and fundamentals focused approach to throwing
-              skills development.
-            </h4>
-            <p className="font-light">
-              Our approach to throwing training is to come up with unique and
-              creative drills that bias your body into using better technique.
-              One of the biggest downfalls of the current approach to training
-              and learning how to throw in ultimate is that it is not nuanced
-              enough. In any other sport, people spend hours focusing on,
-              working, and refining nuanced aspects of their technique, but in
-              ultimate the status quo seems to be, “just throw a lot and you’ll
-              figure it out”. Considering that most players aren’t even taught
-              proper mechanics to begin with, this means several players spend
-              hours practicing and solidifying poor throwing mechanic habits.
-              We’re here to change that. Our drills are designed to train proper
-              technique and help you reach your potential as a thrower.
-            </p>
+            <h3 className="uppercase text-lg mt-3 md:mt-0">The Team</h3>
+            <TeamMemberDesc
+              name={"Jamie Eriksson"}
+              photo={jamiePhoto}
+              teamMemberDesc={`Jamie start playing competitive ultimate at UT-Dallas in August 2015. In January of 2016 she dedicated herself to throwing every day for 100 days in a row. From that point on, she developed a passion for learning more about proper throwing technique and refining her throwing skills. This perseverance and dedication helped her make the team rosters for Texas Showdown, the elite women's club team in Texas; Public Enemy, the elite mixed team based out of DFW; and Austin Torch, the first Texas women's professional ultimate team.`}
+            />
+            <TeamMemberDesc
+              name={"Harrison Schwarzer"}
+              photo={harrisonPhoto}
+              teamMemberDesc={``}
+            />
           </div>
         </div>
         <svg
@@ -88,11 +100,7 @@ function AboutContent() {
       <div id="philosophy">
         <div className="bg-teal -mt-2 z-0">
           <div className="p-6 max-w-6xl container font-sans text-gray-light">
-            <h3 className="uppercase font-light">Our Philosophy</h3>
-            <h4 className="text-2xl">
-              A technique driven and fundamentals focused approach to throwing
-              skills development.
-            </h4>
+            <h3 className="uppercase text-lg mb-2">Our Philosophy</h3>
             <p className="font-light">
               Our approach to throwing training is to come up with unique and
               creative drills that bias your body into using better technique.
@@ -131,7 +139,7 @@ function About() {
       <ColorHeader />
       <div className="w-screen h-32 md:h-16 md:hidden bg-light-gray"></div>
       <AboutContent />
-      <div className="flex-grow-1 h-16"></div>
+      <div className="flex-grow-1 h-48"></div>
       <Footer />
     </div>
   );
