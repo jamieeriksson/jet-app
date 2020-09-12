@@ -73,7 +73,10 @@ class PageBody extends React.Component {
         <div className="bg-gray-dark -mt-2 z-0">
           <div className="p-6 max-w-6xl container font-sans text-gray-light">
             <h3 className="uppercase font-light">Our Philosophy</h3>
-            <h4 className="text-2xl">Jamie Eriksson</h4>
+            <h4 className="text-2xl">
+              A technique driven and fundamentals focused approach to throwing
+              skills development.
+            </h4>
             <p className="font-light">
               Our approach to throwing training is to come up with unique and
               creative drills that bias your body into using better technique.
