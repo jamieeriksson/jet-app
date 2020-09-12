@@ -46,7 +46,7 @@ class TeamMemberDesc extends React.Component {
       <div className="flex flex-col mb-6 -ml-2 md:flex-row md:mt-2">
         <img
           src={this.props.photo}
-          alt={`Profile photo of ${this.props.name}`}
+          alt={`Profile of ${this.props.name}`}
           className="inline-block h-64"
         />
         <div className="flex flex-col ml-4 justify-center">
