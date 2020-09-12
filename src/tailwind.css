@@ -3,3 +3,7 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+.rotate {
+  transform: rotate(3.8deg)
+}

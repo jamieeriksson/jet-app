@@ -26,18 +26,33 @@ function ColorHeader() {
   );
 }
 
+function Title() {
+  return (
+    <div className="absolute w-screen flex justify-center items-center h-full">
+      <div className="pl-5 md:pl-0 md:flex-grow-1"></div>
+      <h1 className="font-title text-5xl uppercase text-gray-dark tracking-widest rotate mb-12 md:text-6xl lg:mb-8 xl:mb-5">
+        About
+      </h1>
+      <div className="flex-grow-10 lg:flex-grow-6 xl:flex-grow-4"></div>
+    </div>
+  );
+}
+
 function AboutContent() {
   return (
     <div className="z-10">
-      <div id="theTeam">
-        <svg
-          viewBox="0 0 1440 177"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M1440 177L5.07832e-05 86V177H1440Z" fill="#314E4A" />
-          <path d="M0 177L1440 0V177H0Z" fill="#313131" />
-        </svg>
+      <div id="the-team">
+        <div id="upper-triangles" className="relative">
+          <Title />
+          <svg
+            viewBox="0 0 1440 177"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M1440 177L5.07832e-05 86V177H1440Z" fill="#314E4A" />
+            <path d="M0 177L1440 0V177H0Z" fill="#313131" />
+          </svg>
+        </div>
         <div className="bg-gray-dark -mt-2 z-0">
           <div className="p-6 max-w-6xl container font-sans text-gray-light">
             <h3 className="uppercase font-light">Our Philosophy</h3>
@@ -114,7 +129,7 @@ function About() {
   return (
     <div className="bg-gray-light min-h-screen overflow-x-hidden flex flex-col">
       <ColorHeader />
-      <div className="w-screen h-16 md:hidden bg-light-gray"></div>
+      <div className="w-screen h-32 md:h-16 md:hidden bg-light-gray"></div>
       <AboutContent />
       <div className="flex-grow-1 h-16"></div>
       <Footer />

@@ -46,6 +46,10 @@ module.exports = {
       1: 1,
       2: 2,
       3: 3,
+      4: 4,
+      5: 5,
+      6: 6,
+      10: 10,
     },
     backdropFilter: {
       none: "none",
@@ -53,6 +57,9 @@ module.exports = {
       "blur-med": "blur(4px)",
       "blur-lg": "blur(6px)",
       "blur-xl": "blur(8px)",
+    },
+    rotate: {
+      4: "3.8deg",
     },
     extend: {
       spacing: {
