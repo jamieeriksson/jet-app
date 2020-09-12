@@ -47,7 +47,7 @@ class TeamMemberDesc extends React.Component {
         <img
           src={this.props.photo}
           alt={`Profile of ${this.props.name}`}
-          className="inline-block h-64"
+          className="inline-block h-64 w-64 self-center"
         />
         <div className="flex flex-col ml-4 justify-center">
           <h4 className="text-2xl">{this.props.name}</h4>
@@ -75,7 +75,9 @@ function AboutContent() {
         </div>
         <div className="bg-gray-dark -mt-2 z-0">
           <div className="p-6 max-w-6xl container font-sans text-gray-light">
-            <h3 className="uppercase text-lg mt-3 md:mt-0">The Team</h3>
+            <h3 className="uppercase text-2xl font-thin mt-3 lg:mt-2 xl:mt-0">
+              The Team
+            </h3>
             <TeamMemberDesc
               name={"Jamie Eriksson"}
               photo={jamiePhoto}
@@ -100,7 +102,7 @@ function AboutContent() {
       <div id="philosophy">
         <div className="bg-teal -mt-2 z-0">
           <div className="p-6 max-w-6xl container font-sans text-gray-light">
-            <h3 className="uppercase text-lg mb-2">Our Philosophy</h3>
+            <h3 className="uppercase text-2xl mb-2">Our Philosophy</h3>
             <p className="font-light">
               Our approach to throwing training is to come up with unique and
               creative drills that bias your body into using better technique.
