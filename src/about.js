@@ -93,8 +93,8 @@ function AboutContent() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path d="M1440 115L5.07832e-05 0V115H1440Z" fill="#314E4A" />
-          <path d="M0 7.7486e-07L1440 115V7.7486e-07H0Z" fill="#313131" />
+          <path d="M1440 115V0H0V115H1440Z" fill="#314E4A" />
+          <path d="M0 0L1440 115V0H0Z" fill="#313131" />
         </svg>
       </div>
       <div id="philosophy">
