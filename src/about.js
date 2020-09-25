@@ -13,7 +13,6 @@ import "./tailwind.output.css";
 import logo from "./assets/logo.svg";
 import jamiePhoto from "./assets/jamie-photo.png";
 import harrisonPhoto from "./assets/harrison-photo.png";
-import lightbulbIcon from "./assets/lightbulb-solid.svg";
 
 function ColorHeader() {
   return (
