@@ -1,9 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDumbbell } from "@fortawesome/free-solid-svg-icons";
+import { faRuler } from "@fortawesome/free-solid-svg-icons";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { faFastForward } from "@fortawesome/free-solid-svg-icons";
+import { faArrowsAltH } from "@fortawesome/free-solid-svg-icons";
+import { faWind } from "@fortawesome/free-solid-svg-icons";
+
 import Footer from "./footer.js";
 import "./tailwind.output.css";
 import logo from "./assets/logo.svg";
 import jamiePhoto from "./assets/jamie-photo.png";
 import harrisonPhoto from "./assets/harrison-photo.png";
+import lightbulbIcon from "./assets/lightbulb-solid.svg";
 
 function ColorHeader() {
   return (
@@ -58,79 +68,308 @@ class TeamMemberDesc extends React.Component {
   }
 }
 
-function AboutContent() {
-  return (
-    <div className="z-10">
-      <div id="the-team">
-        <div id="upper-triangles" className="relative">
-          <Title />
-          <svg
-            viewBox="0 0 1440 177"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M1440 177L5.07832e-05 86V177H1440Z" fill="#314E4A" />
-            <path d="M0 177L1440 0V177H0Z" fill="#313131" />
-          </svg>
+class ContentImageRight extends React.Component {
+  render() {
+    return (
+      <div className="flex flex-col mb-6 md:flex-row md:mt-2">
+        <div className="flex flex-col mr-4 justify-center">
+          <h3 className="uppercase text-2xl mb-2">{this.props.title}</h3>
+          <p className="font-light">{this.props.paragraph}</p>
         </div>
-        <div className="bg-gray-dark -mt-2 z-0">
+        <img
+          src={this.props.photo}
+          alt={`${this.props.alt}`}
+          className="inline-block h-64 w-64 self-center ml-24"
+        />
+      </div>
+    );
+  }
+}
+
+class ContentImageLeft extends React.Component {
+  render() {
+    return (
+      <div className="flex flex-col mb-6 md:flex-row md:mt-2">
+        <img
+          src={this.props.photo}
+          alt={`${this.props.alt}`}
+          className="inline-block h-64 w-64 self-center"
+        />
+        <div className="flex flex-col ml-4 justify-center">
+          <h3 className="uppercase text-2xl mb-2">{this.props.title}</h3>
+          <p className="font-light">{this.props.paragraph}</p>
+        </div>
+      </div>
+    );
+  }
+}
+
+class Content1 extends React.Component {
+  render() {
+    return (
+      <div className="p-6 max-w-4xl container font-sans text-gray-light">
+        <ContentImageRight
+          title={"Our Philosophy"}
+          photo={lightbulbIcon}
+          paragraph={`We believe that throwing is a crucial part of the sport of ultimate. Currently, too few ultimate players have access to proper and efficient throwing mechanics coaching. We ourselves had to spend countless hours learning, experimenting, and perfecting throwing mechanics theory - theory which should only take a player a few months to learn. We want to expand access to throwing skills development by coaching, teaching, and empowering the players of our sport.`}
+        />
+        <ContentImageLeft
+          title={"1-on-1 Approach"}
+          photo={jamiePhoto}
+          paragraph={`Throwing is a hands on, highly individualized skill. Everyone is different. Certain cues or drills may help one person and impede another. Therefore, we've found that generalized drills and coaching rarely help athletes overcome the poor mechanics they have developed over months or years of playing. As a result, we strongly believe that a one-on-one consultation approach is the best way to help players improve throwing mechanics.`}
+        />
+      </div>
+    );
+  }
+}
+
+class Content2 extends React.Component {
+  render() {
+    return (
+      <div>
+        <ContentImageLeft
+          title={"1-on-1 Approach"}
+          photo={jamiePhoto}
+          paragraph={`Throwing is a hands on, highly individualized skill. Everyone is different. Certain cues or drills may help one person and impede another. Therefore, we've found that generalized drills and coaching rarely help athletes overcome the poor mechanics they have developed over months or years of playing. As a result, we strongly believe that a one-on-one consultation approach is the best way to help players improve throwing mechanics.`}
+        />
+      </div>
+    );
+  }
+}
+
+class Content3 extends React.Component {
+  render() {
+    return (
+      <div>
+        <div className="bg-teal -mt-2 z-0">
           <div className="p-6 max-w-6xl container font-sans text-gray-light">
-            <h3 className="uppercase text-2xl font-thin mt-3 lg:mt-2 xl:mt-0">
-              The Team
-            </h3>
-            <TeamMemberDesc
-              name={"Jamie Eriksson"}
-              photo={jamiePhoto}
-              teamMemberDesc={`Jamie start playing competitive ultimate at UT-Dallas in August 2015. In January of 2016 she dedicated herself to throwing every day for 100 days in a row. From that point on, she developed a passion for learning more about proper throwing technique and refining her throwing skills. This perseverance and dedication helped her make the team rosters for Texas Showdown, the elite women's club team in Texas; Public Enemy, the elite mixed team based out of DFW; and Austin Torch, the first Texas women's professional ultimate team.`}
-            />
-            <TeamMemberDesc
-              name={"Harrison Schwarzer"}
+            <ContentImageRight
+              title={"Empowerment"}
               photo={harrisonPhoto}
-              teamMemberDesc={``}
+              paragraph={`Our goal is to get our players to the point that they don't need us anymore.`}
             />
           </div>
         </div>
-        <svg
-          viewBox="0 0 1440 115"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M1440 115V0H0V115H1440Z" fill="#314E4A" />
-          <path d="M0 0L1440 115V0H0Z" fill="#313131" />
-        </svg>
       </div>
-      <div id="philosophy">
-        <div className="bg-teal -mt-2 z-0">
-          <div className="p-6 max-w-6xl container font-sans text-gray-light">
-            <h3 className="uppercase text-2xl mb-2">Our Philosophy</h3>
+    );
+  }
+}
+
+function AboutHeader() {
+  return (
+    <div id="upper-triangles" className="relative">
+      <Title />
+      <svg
+        viewBox="0 0 1440 177"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M1440 177L5.07832e-05 86V177H1440Z" fill="#314E4A" />
+        <path d="M0 177L1440 0V177H0Z" fill="#313131" />
+      </svg>
+    </div>
+  );
+}
+
+function AboutUs() {
+  return (
+    <div className="p-6 pb-24 max-w-6xl container flex flex-col">
+      <h2 className="text-right text-gray-light uppercase font-title text-4xl mt-4">
+        Jamie Eriksson Throwing
+      </h2>
+      <div className="self-end w-48 h-6 bg-teal-bright mb-12"></div>
+      <div className="flex flex-col md:flex-row font-sans text-gray-light">
+        <div className="p-4 md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
+          <h3 className="font-title text-lg uppercase">Who We Are</h3>
+          <p className="font-light">
+            We are a small team of coaches passionate about the game of ultimate
+            and the development of its players. We understand the importance of
+            throwing in our sport and see it as an integral part of a player’s
+            development. We have spent countless hours analyzing efficient
+            throwing mechanics and developing methods for coaching players on
+            them.
+          </p>
+        </div>
+        <div className="p-4 border-t border-b md:border-t-0 md:border-b-0 md:border-l md:border-r border-gray-100 md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
+          <h3 className="font-title text-lg uppercase">What We Do</h3>
+          <p className="font-light">
+            We coach players on efficient throwing mechanics through a
+            consultation based approach. We analyze the form of individual
+            players and give them feedback in a one-on-one setting. We then
+            curate a program of throwing drills which address aspects of their
+            form and help them achieve better mechanics.
+          </p>
+        </div>
+        <div className="p-4 md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
+          <h3 className="font-title text-lg uppercase">What We Believe In</h3>
+          <p className="font-light">
+            We strongly believe that throwing mechanics are currently an
+            extremely underdeveloped part of ultimate. Many players, even at the
+            elite level, have unaccessed potential due to poor and unaddressed
+            throwing form. We want to help players of all levels improve their
+            game by committing ourselves to the understanding and coaching of
+            throwing technique.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+class TheTeam extends React.Component {
+  render() {
+    return (
+      <div className="p-6 max-w-6xl container font-sans text-gray-light">
+        <h3 className="uppercase text-3xl font-title mt-3 lg:mt-2 xl:mt-0">
+          The Team
+        </h3>
+        <div className="w-48 h-6 bg-teal-bright mb-12"></div>
+        <div className="flex flex-col mb-6 -ml-2 md:flex-row md:mt-2">
+          <img
+            src={jamiePhoto}
+            alt={`Profile of Jamie Eriksson`}
+            className="inline-block h-64 w-64 self-center"
+          />
+          <div className="flex flex-col ml-4 mr-10 justify-center">
+            <h4 className="text-2xl">Jamie Eriksson</h4>
             <p className="font-light">
-              Our approach to throwing training is to come up with unique and
-              creative drills that bias your body into using better technique.
-              One of the biggest downfalls of the current approach to training
-              and learning how to throw in ultimate is that it is not nuanced
-              enough. In any other sport, people spend hours focusing on,
-              working, and refining nuanced aspects of their technique, but in
-              ultimate the status quo seems to be, “just throw a lot and you’ll
-              figure it out”. Considering that most players aren’t even taught
-              proper mechanics to begin with, this means several players spend
-              hours practicing and solidifying poor throwing mechanic habits.
-              We’re here to change that. Our drills are designed to train proper
-              technique and help you reach your potential as a thrower.
+              Jamie start playing competitive ultimate at UT-Dallas in August
+              2015. In January of 2016 she dedicated herself to throwing every
+              day for 100 days in a row. From that point on, she developed a
+              passion for learning more about proper throwing technique and
+              refining her throwing skills. This perseverance and dedication
+              helped her make the team rosters for Texas Showdown, the elite
+              women's club team in Texas; Public Enemy, the elite mixed team
+              based out of DFW; and Austin Torch, the first Texas women's
+              professional ultimate team. Jamie brings a creative, dedicated,
+              and detailed approach to the skill development of those she
+              coaches.
             </p>
           </div>
         </div>
-        <svg
-          viewBox="0 0 1440 177"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M0 -1.54972e-06L1440 124V-1.54972e-06H0Z" fill="#313131" />
-          <path
-            d="M1440 -3.63536e-06L0 177V-3.63536e-06H1440Z"
-            fill="#314E4A"
+        <div className="flex flex-col mb-6 -ml-2 md:flex-row md:mt-2">
+          <div className="flex flex-col ml-10 mr-4 justify-center">
+            <h4 className="text-2xl">Harrison</h4>
+            <p className="font-light">
+              Harrison has studied ultimate and throwing mechanics intensively.
+              He currently coaches Dallas Public Enemy and the Western Ultimate
+              League's Arizona Sidewinders. Harrison won Ultiworld's 2nd
+              Runner-Up Coach of the Year for the 2019 Mixed division after
+              coaching the team, who wasn't expected to qualify for Nationals,
+              to a 7th place finish. He brings a modern and intelligent approach
+              to ultimate training and skill development.
+            </p>
+          </div>
+          <img
+            src={harrisonPhoto}
+            alt={`Profile of Harrison`}
+            className="inline-block h-64 w-64 self-center"
           />
-        </svg>
+        </div>
       </div>
+    );
+  }
+}
+
+function WhyTrain() {
+  return (
+    <div className="p-6 pt-20 pb-12 max-w-6xl container text-gray-light flex flex-col md:flex-row">
+      <div
+        id="why-train-desc"
+        className="mx-auto mb-8 md:mr-12 max-w-sm lg:max-w-md"
+      >
+        <h2 className="text-gray-light uppercase font-title text-2xl mt-4">
+          Why Train With Us?
+        </h2>
+        <div className="w-48 h-4 bg-teal-bright"></div>
+        <p className="font-sans font-light my-3">
+          These are just a few of the benefits you could experience by working
+          with us on your throwing mechanics. Learning how to throw efficiently
+          and properly can raise your game in countless ways.
+        </p>
+        <Link
+          to="/services"
+          className="block font-title underline text-right text-sm opacity-75 hover:opacity-100 transition duration-100 ease-in-out"
+        >
+          View our services
+        </Link>
+      </div>
+      <div className="flex-grow-1"></div>
+      <div className="m-auto md:ml-auto font-sans text-lg text-gray-light">
+        <ul className="whitespace-no-wrap">
+          <li className="py-4 pr-16 pl-8 border-b border-gray-light md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
+            <FontAwesomeIcon icon={faDumbbell} />
+            <span className="pl-12 lg:pl-24">Increased throwing power</span>
+          </li>
+          <li className="py-4 pr-16 pl-8 border-b border-gray-light md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
+            <FontAwesomeIcon icon={faRuler} />
+            <span className="pl-12 lg:pl-24">Add distance to your throws</span>
+          </li>
+          <li className="py-4 pr-16 pl-8 border-b border-gray-light md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
+            <FontAwesomeIcon icon={faSpinner} />
+            <span className="pl-12 lg:pl-24">Better consistency of throws</span>
+          </li>
+          <li className="py-4 pr-16 pl-8 border-b border-gray-light md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
+            <FontAwesomeIcon icon={faFastForward} />
+            <span className="pl-12 lg:pl-24">Faster break throws</span>
+          </li>
+          <li className="py-4 pr-16 pl-8 border-b border-gray-light md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
+            <FontAwesomeIcon icon={faArrowsAltH} />
+            <span className="pl-12 lg:pl-24">Wider range of throws</span>
+          </li>
+          <li className="py-4 pr-16 pl-8 border-b border-gray-light md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
+            <FontAwesomeIcon icon={faWind} />
+            <span className="pl-12 lg:pl-24">
+              Improved ability to throw in wind
+            </span>
+          </li>
+          <li className="p-4 md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
+            Much more...
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+function AboutContent() {
+  return (
+    <div className="z-10">
+      <AboutHeader />
+      <div className="bg-gray-dark -mt-2 z-0">
+        <AboutUs />
+      </div>
+      <svg
+        viewBox="0 0 1440 115"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M1440 115V0H0V115H1440Z" fill="#314E4A" />
+        <path d="M0 0L1440 115V0H0Z" fill="#313131" />
+      </svg>
+      <div className="bg-teal -mt-2 z-0">
+        <TheTeam />
+      </div>
+      <svg
+        viewBox="0 0 1440 115"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M0 0V115H1440V0H0Z" fill="#314E4A" />
+        <path d="M0 115L1440 0V115H0Z" fill="#313131" />
+      </svg>
+
+      <div className="bg-gray-dark -mt-2 z-0">
+        <WhyTrain />
+      </div>
+      <svg
+        viewBox="0 0 1440 177"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M1440 0L0 124V0H1440Z" fill="#314E4A" />
+        <path d="M0 0L1440 177V0H0Z" fill="#313131" />
+      </svg>
     </div>
   );
 }
