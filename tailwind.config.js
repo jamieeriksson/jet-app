@@ -23,6 +23,7 @@ module.exports = {
       transparent: "transparent",
       gray: {
         light: "#EEEEEE",
+        medium: "#7B7B7B",
         dark: "#313131",
         100: "#f7fafc",
         200: "#edf2f7",
@@ -60,6 +61,12 @@ module.exports = {
     },
     rotate: {
       4: "3.8deg",
+      45: "-45deg",
+    },
+    gridTemplateColumns: {
+      sm: "14rem",
+      md: "14rem 14rem",
+      lg: "14rem 14rem 14rem 14rem",
     },
     extend: {
       spacing: {
