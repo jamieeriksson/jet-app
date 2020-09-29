@@ -2,9 +2,9 @@ import React from "react";
 import "./tailwind.output.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./nav.js";
-import Home from "./home.js";
-import About from "./about.js";
-import Services from "./services.js";
+import Home from "./home/home.js";
+import About from "./about/about.js";
+import Services from "./services/services.js";
 
 function App() {
   return (
