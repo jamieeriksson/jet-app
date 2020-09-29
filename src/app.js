@@ -5,6 +5,7 @@ import NavBar from "./nav.js";
 import Home from "./home/home.js";
 import About from "./about/about.js";
 import Services from "./services/services.js";
+import Contact from "./contact/contact.js";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" exact component={Home}></Route>
         <Route path="/about" component={About}></Route>
         <Route path="/services" component={Services}></Route>
+        <Route path="/contact" component={Contact}></Route>
       </Switch>
     </Router>
   );
