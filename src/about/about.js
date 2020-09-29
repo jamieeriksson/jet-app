@@ -54,7 +54,7 @@ function About() {
       <ColorHeader />
       <div className="w-screen h-32 md:h-16 md:hidden bg-light-gray"></div>
       <AboutContent />
-      <div className="flex-grow-1 h-48"></div>
+      <div className="flex-grow-1 h-24 md:h-48"></div>
       <Footer />
     </div>
   );

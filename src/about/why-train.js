@@ -13,7 +13,7 @@ import { faWind } from "@fortawesome/free-solid-svg-icons";
 
 function WhyTrain() {
   return (
-    <div className="p-6 pt-20 pb-12 max-w-6xl container text-gray-light flex flex-col md:flex-row">
+    <div className="p-6 pt-10 md:pt-20 pb-12 max-w-6xl container text-gray-light flex flex-col md:flex-row">
       <div
         id="why-train-desc"
         className="mx-auto mb-8 md:mr-12 max-w-sm lg:max-w-md"
@@ -29,7 +29,7 @@ function WhyTrain() {
         </p>
         <Link
           to="/services"
-          className="block font-title underline text-right text-sm opacity-75 hover:opacity-100 transition duration-100 ease-in-out"
+          className="block font-title underline text-right text-sm md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out"
         >
           View our services
         </Link>
@@ -37,33 +37,43 @@ function WhyTrain() {
       <div className="flex-grow-1"></div>
       <div className="m-auto md:ml-auto font-sans text-lg text-gray-light">
         <ul className="whitespace-no-wrap">
-          <li className="py-4 pr-16 pl-8 border-b border-gray-light md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
+          <li className="py-3 md:py-4 pr-8 md:pr-16 pl-4 md:pl-8 border-b border-gray-light md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
             <FontAwesomeIcon icon={faDumbbell} />
-            <span className="pl-12 lg:pl-24">Increased throwing power</span>
+            <span className="pl-8 md:pl-12 lg:pl-24 text-sm md:text-base">
+              Increased throwing power
+            </span>
           </li>
-          <li className="py-4 pr-16 pl-8 border-b border-gray-light md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
+          <li className="py-3 md:py-4 pr-8 md:pr-16 pl-4 md:pl-8 border-b border-gray-light md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
             <FontAwesomeIcon icon={faRuler} />
-            <span className="pl-12 lg:pl-24">Add distance to your throws</span>
+            <span className="pl-8 md:pl-12 lg:pl-24 text-sm md:text-base">
+              Add distance to your throws
+            </span>
           </li>
-          <li className="py-4 pr-16 pl-8 border-b border-gray-light md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
+          <li className="py-3 md:py-4 pr-8 md:pr-16 pl-4 md:pl-8 border-b border-gray-light md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
             <FontAwesomeIcon icon={faSpinner} />
-            <span className="pl-12 lg:pl-24">Better consistency of throws</span>
+            <span className="pl-8 md:pl-12 lg:pl-24 text-sm md:text-base">
+              Better consistency of throws
+            </span>
           </li>
-          <li className="py-4 pr-16 pl-8 border-b border-gray-light md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
+          <li className="py-3 md:py-4 pr-8 md:pr-16 pl-4 md:pl-8 border-b border-gray-light md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
             <FontAwesomeIcon icon={faFastForward} />
-            <span className="pl-12 lg:pl-24">Faster break throws</span>
+            <span className="pl-8 md:pl-12 lg:pl-24 text-sm md:text-base">
+              Faster break throws
+            </span>
           </li>
-          <li className="py-4 pr-16 pl-8 border-b border-gray-light md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
+          <li className="py-3 md:py-4 pr-8 md:pr-16 pl-4 md:pl-8 border-b border-gray-light md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
             <FontAwesomeIcon icon={faArrowsAltH} />
-            <span className="pl-12 lg:pl-24">Wider range of throws</span>
+            <span className="pl-8 md:pl-12 lg:pl-24 text-sm md:text-base">
+              Wider range of throws
+            </span>
           </li>
-          <li className="py-4 pr-16 pl-8 border-b border-gray-light md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
+          <li className="py-3 md:py-4 pr-8 md:pr-16 pl-4 md:pl-8 border-b border-gray-light md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
             <FontAwesomeIcon icon={faWind} />
-            <span className="pl-12 lg:pl-24">
+            <span className="pl-8 md:pl-12 lg:pl-24 text-sm md:text-base">
               Improved ability to throw in wind
             </span>
           </li>
-          <li className="p-4 md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
+          <li className="py-3 md:py-4 text-sm md:text-base md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
             Much more...
           </li>
         </ul>

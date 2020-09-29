@@ -3,12 +3,12 @@ import "../tailwind.output.css";
 
 function OurProcess() {
   return (
-    <div className="p-6 pb-24 max-w-6xl container flex flex-col text-gray-light">
+    <div className="p-6 pb-16 md:pb-24 max-w-6xl container flex flex-col text-gray-light">
       <h2 className="text-right uppercase font-title text-4xl mt-4">
         Our Process
       </h2>
       <div className="self-end w-48 h-6 bg-teal-bright mb-12"></div>
-      <ul className="max-w-3xl self-center font-light mb-12">
+      <ul className="max-w-3xl self-center font-light mb-6 md:mb-12">
         <li>
           <span className="font-title text-lg">1.</span> We work to get to know
           you and understand what your throwing goals are.
@@ -32,8 +32,8 @@ function OurProcess() {
           progress.
         </li>
       </ul>
-      <div className="self-center flex flex-col md:flex-row font-sans text-gray-light">
-        <div className="my-12">
+      <div className="self-center flex flex-col max-w-sm px-12 md:max-w-6xl md:flex-row font-sans text-gray-light">
+        <div className="my-6 md:my-12">
           <h3 className="font-title text-2xl uppercase">
             What we can help you with
           </h3>
@@ -45,7 +45,7 @@ function OurProcess() {
             <li>- Hucking distance, power, and consistency</li>
           </ul>
         </div>
-        <div className="my-12 ml-12">
+        <div className="my-6 md:my-12 md:ml-12">
           <h3 className="font-title text-2xl uppercase">
             Form aspects we analyze
           </h3>
@@ -59,7 +59,7 @@ function OurProcess() {
             <li>- Throwing stance</li>
           </ul>
         </div>
-        <div className="my-12 ml-12">
+        <div className="my-6 md:my-12 md:ml-12">
           <h3 className="font-title text-2xl uppercase">
             Benefits of our technique work
           </h3>

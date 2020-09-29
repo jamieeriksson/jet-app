@@ -17,7 +17,7 @@ class TheTeam extends React.Component {
             alt={`Profile of Jamie Eriksson`}
             className="inline-block h-64 w-64 self-center"
           />
-          <div className="flex flex-col ml-4 mr-10 justify-center">
+          <div className="flex flex-col ml-4 md:mr-10 justify-center">
             <h4 className="text-2xl">Jamie Eriksson</h4>
             <p className="font-light">
               Jamie start playing competitive ultimate at UT-Dallas in August
@@ -35,7 +35,7 @@ class TheTeam extends React.Component {
           </div>
         </div>
         <div className="flex flex-col mb-6 -ml-2 md:flex-row md:mt-2">
-          <div className="flex flex-col ml-10 mr-4 justify-center">
+          <div className="flex flex-col ml-4 md:ml-10 mr-4 justify-center order-2 md:order-1">
             <h4 className="text-2xl">Harrison</h4>
             <p className="font-light">
               Harrison has studied ultimate and throwing mechanics intensively.
@@ -50,7 +50,7 @@ class TheTeam extends React.Component {
           <img
             src={harrisonPhoto}
             alt={`Profile of Harrison`}
-            className="inline-block h-64 w-64 self-center"
+            className="inline-block h-64 w-64 self-center order-1 md:order-2"
           />
         </div>
       </div>

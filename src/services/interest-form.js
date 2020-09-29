@@ -4,7 +4,7 @@ import "../tailwind.output.css";
 class InterestForm extends React.Component {
   render() {
     return (
-      <div className="p-6 pb-24 max-w-6xl container text-gray-dark">
+      <div className="p-6 pt-12 pb-24 max-w-6xl container text-gray-dark">
         <h3 className="font-title uppercase text-3xl">
           Interested in working with us?
         </h3>

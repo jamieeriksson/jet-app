@@ -4,8 +4,8 @@ import "../tailwind.output.css";
 class ShortAbout extends React.Component {
   render() {
     return (
-      <div className="mt-24 p-6 max-w-6xl container font-sans text-gray-dark flex flex-col md:flex-row">
-        <div className="mx-4">
+      <div className="md:mt-24 p-6 max-w-6xl container font-sans text-gray-dark flex flex-col md:flex-row">
+        <div className="mt-6 md:mt-0 mx-4">
           <h3 className="uppercase">Our Goals</h3>
           <p className="font-light">
             We believe that throwing is an underappreciated part of the sport of
@@ -17,7 +17,7 @@ class ShortAbout extends React.Component {
             teaching, and empowering the players of our sport.
           </p>
         </div>
-        <div className="mx-4">
+        <div className="my-6 md:my-0 mx-4">
           <h3 className="uppercase">1-on-1 Approach</h3>
           <p className="font-light">
             Throwing is a hands on, highly individualized skill. Everyone is

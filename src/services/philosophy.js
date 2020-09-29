@@ -38,16 +38,18 @@ function Philosophy() {
           own versus the 3-4 months that it should have taken had I had a proper
           throwing coach to work with.
         </p>
-        <iframe
-          className="my-6 mx-auto"
-          width="840"
-          height="472.5"
-          title="jamie-forehand-form"
-          src="https://www.youtube.com/embed/wWF62939IwI"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <div className="relative">
+          <iframe
+            className="my-6 mx-auto max-w-3xl w-full"
+            width="840"
+            height="472.5"
+            title="jamie-forehand-form"
+            src="https://www.youtube.com/embed/wWF62939IwI"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          />
+        </div>
         <p>
           We can help you improve your backhand, forehand, break throws, hucks,
           and pivots. We would love to help you understand and improve your
