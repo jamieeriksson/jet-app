@@ -64,9 +64,11 @@ module.exports = {
       45: "-45deg",
     },
     gridTemplateColumns: {
-      sm: "14rem",
-      md: "14rem 14rem",
-      lg: "14rem 14rem 14rem 14rem",
+      "sm-1": "14rem",
+      "sm-2": "14rem 14rem",
+      "sm-4": "14rem 14rem 14rem 14rem",
+      "md-1": "18rem",
+      "md-2": "18rem 18rem",
     },
     extend: {
       spacing: {
