@@ -10,7 +10,7 @@ class InterestForm extends React.Component {
         </h3>
         <div className="w-48 h-6 bg-teal-bright mb-6"></div>
         <p className="font-title text-lg">
-          Fill out the form below or send an email to{" "}
+          Send us an email at{" "}
           <a
             href="mailto: jamieeriksson@gmail.com"
             target="_blank"

@@ -56,7 +56,7 @@ function Services() {
       <ColorHeader />
       <div className="w-screen h-32 md:h-16 md:hidden bg-light-gray"></div>
       <ServicesContent />
-      <div className="flex-grow-1 h-48"></div>
+      <div className="flex-grow-1 h-16"></div>
       <Footer />
     </div>
   );
