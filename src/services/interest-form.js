@@ -1,5 +1,6 @@
 import React from "react";
 import "../tailwind.output.css";
+import ContactForm from "../contact/contact-form.js";
 
 class InterestForm extends React.Component {
   render() {
@@ -19,6 +20,9 @@ class InterestForm extends React.Component {
             jamieeriksson@gmail.com
           </a>
         </p>
+        <div className="mt-6">
+          <ContactForm />
+        </div>
       </div>
     );
   }

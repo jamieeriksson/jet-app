@@ -61,7 +61,7 @@ class ContactForm extends React.Component {
               value={this.state.name}
               onChange={this.handleChange.bind(this, "name")}
               placeholder="Your name"
-              className="mb-6 mt-1 mr-10 p-1 w-64 text-gray-dark"
+              className="mb-6 mt-1 mr-10 p-1 w-64 text-gray-dark shadow-md border-gray-dark rounded border border-opacity-25 bg-gray-light"
             />
           </label>
           <label>
@@ -72,7 +72,7 @@ class ContactForm extends React.Component {
               value={this.state.email}
               onChange={this.handleChange.bind(this, "email")}
               placeholder="youremail@example.com"
-              className="mb-6 mt-1 p-1 w-64 text-gray-dark"
+              className="mb-6 mt-1 p-1 w-64 text-gray-dark shadow-md border-gray-dark rounded border border-opacity-25 bg-gray-light"
             />
             <br />
           </label>
@@ -85,7 +85,7 @@ class ContactForm extends React.Component {
             value={this.state.subject}
             onChange={this.handleChange.bind(this, "subject")}
             placeholder="Interest in Throwing Coaching"
-            className="mb-6 mt-1 p-1 w-full text-gray-dark"
+            className="mb-6 mt-1 p-1 w-full text-gray-dark shadow-md border-gray-dark rounded border border-opacity-25 bg-gray-light"
           />
           <br />
         </label>
@@ -96,7 +96,7 @@ class ContactForm extends React.Component {
             value={this.state.message}
             onChange={this.handleChange.bind(this, "message")}
             placeholder="Your message"
-            className="mb-6 mt-2 p-1 w-full h-64 text-gray-dark"
+            className="mb-6 mt-2 p-1 w-full h-64 text-gray-dark shadow-md border-gray-dark rounded border border-opacity-25 bg-gray-light"
           />
         </label>
         <br />
@@ -105,7 +105,7 @@ class ContactForm extends React.Component {
           type="submit"
           value="Submit"
           onClick={this.handleSubmit}
-          className="bg-teal-dark px-5 py-1"
+          className="bg-teal-dark text-gray-light px-5 py-1 uppercase shadow-md text-shadow-sm"
         />
       </form>
     );
