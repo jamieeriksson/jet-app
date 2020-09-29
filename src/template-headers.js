@@ -30,7 +30,7 @@ class Title extends React.Component {
     return (
       <div className="absolute w-screen flex justify-center items-center h-full">
         <div className="pl-5 md:pl-0 md:flex-grow-1"></div>
-        <h1 className="font-title text-5xl uppercase text-gray-dark tracking-widest rotate mb-12 md:text-6xl lg:mb-8 xl:mb-5">
+        <h1 className="font-title text-4xl uppercase text-gray-dark tracking-widest rotate mb-12 md:text-5xl lg:mb-8 xl:mb-5">
           {this.props.title}
         </h1>
         <div className="flex-grow-10 lg:flex-grow-6 xl:flex-grow-4"></div>
