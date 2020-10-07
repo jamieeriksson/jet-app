@@ -8,24 +8,27 @@ class ShortAbout extends React.Component {
         <div className="mt-6 md:mt-0 mx-4">
           <h3 className="uppercase">Our Goals</h3>
           <p className="font-light">
-            We believe that throwing is an underappreciated part of the sport of
-            ultimate. Currently, too few ultimate players have access to proper
-            throwing mechanics coaching. I have had to spend countless hours
-            learning, experimenting, and perfecting throwing mechanics theory -
-            theory which should only take a player a few months to learn. We
-            want to expand access to throwing skills development by coaching,
-            teaching, and empowering the players of our sport.
+            We want to expand access to throwing skill development through
+            coaching, teaching, and empowering the players of our sport. We
+            think that if you understand throwing mechanics theory - theory
+            we've spent thousands of hours learning, experimenting with, and
+            perfecting - learning to throw doesn't have to be a lifetime
+            journey. We think throwers can develop a solid base in a matter of
+            months. They just need the right information and dedicated coaching.
           </p>
         </div>
         <div className="my-6 md:my-0 mx-4">
           <h3 className="uppercase">1-on-1 Approach</h3>
           <p className="font-light">
-            Throwing is a hands on, highly individualized skill. Everyone is
-            different. Certain cues or drills may help one person, but impede
-            another. We've found that generalized drills and coaching rarely
-            help athletes improve their mechanics. As a result, we strongly
-            believe that a one-on-one consultation approach is the best way to
-            help players improve throwing mechanics.
+            Coaching throwing is highly specific and individualized. A
+            cookie-cutter approach rarely works. Everyone is built differently
+            with varying levels of mobility, strength, and structural make-up.
+            As a result, certain cues or drills may help one person, but impede
+            another. We have found that generalized drills and coaching often
+            lead to players developing bad habits in light of these
+            individualized differences. We strongly believe that a one-on-one
+            consultation approach is the best way to help players improve their
+            throwing mechanics.
           </p>
         </div>
       </div>

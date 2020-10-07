@@ -15,9 +15,8 @@ function AboutUsSections() {
             We are a small team of coaches passionate about the game of ultimate
             and the development of its players. We understand the importance of
             throwing in our sport and see it as an integral part of a player’s
-            development. We have spent countless hours analyzing efficient
-            throwing mechanics and developing methods for coaching players on
-            them.
+            development. We have spent countless hours analyzing throwing
+            mechanics and developing the most effective ways to teach them.
           </p>
         </div>
         <div className="p-4 border-t border-b md:border-t-0 md:border-b-0 md:border-l md:border-r border-gray-100 md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
@@ -35,10 +34,10 @@ function AboutUsSections() {
           <p className="font-light">
             We strongly believe that throwing mechanics are currently an
             extremely underdeveloped part of ultimate. Many players, even at the
-            elite level, have unaccessed potential due to poor and unaddressed
-            throwing form. We want to help players of all levels improve their
-            game by committing ourselves to the understanding and coaching of
-            throwing technique.
+            elite level, have unaccessed potential due to broken throwing form.
+            We want to help players of all levels improve their game by
+            committing ourselves to the understanding and coaching of throwing
+            technique.
           </p>
         </div>
       </div>

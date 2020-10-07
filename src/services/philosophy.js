@@ -13,7 +13,8 @@ function Philosophy() {
           Everyone knows there is agreed-upon technique for efficiently shooting
           a basketball, hitting a baseball, swinging a golf club, sprinting, or
           performing in almost any other sport. We believe the same holds true
-          for ultimate frisbee throwing mechanics, and we are here to coach it.
+          for ultimate frisbee throwing mechanics, and we are here to coach
+          them.
           <br />
           <br />
           We believe that proper throwing development and coaching needs to be
@@ -29,14 +30,8 @@ function Philosophy() {
           needs.
           <br />
           <br />
-          Below is an example of how my forehand mechanics have changed after
-          intensively studying and training throwing technique. This improvement
-          in technique has put 15-20 extra yards on my forehand huck, has given
-          me better forehand break throws, has improved my ability to throw in
-          the wind and in rain, and has increased the reliability and
-          consistency of my throws. It also took me five years to achieve on my
-          own versus the 3-4 months that it should have taken had I had a proper
-          throwing coach to work with.
+          Here is an example of how my forehands have changed in the last few
+          years. I'll let the video speak for itself.
         </p>
         <div className="relative">
           <iframe
