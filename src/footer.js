@@ -2,40 +2,40 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./tailwind.output.css";
 
-import instagram from "./assets/icons8-instagram.svg";
-import twitter from "./assets/icons8-twitter.svg";
-import facebook from "./assets/icons8-facebook.svg";
+// import instagram from "./assets/icons8-instagram.svg";
+// import twitter from "./assets/icons8-twitter.svg";
+// import facebook from "./assets/icons8-facebook.svg";
 
-class Social extends React.Component {
-  render() {
-    return (
-      <ul className="list-none font-light text-sm text-gray-600 p-3 md:p-10 md:pl-16">
-        <li className="text-gray-500 font-normal text-sm uppercase mb-2">
-          Social
-        </li>
-        <li className="mt-1 opacity-50 hover:opacity-100">
-          <a href="https://www.instagram.com/jamieriksson/?hl=en">
-            <img
-              src={instagram}
-              className="h-6 pl-1"
-              alt="instagram logo"
-            ></img>
-          </a>
-        </li>
-        <li className="mt-1 opacity-50 hover:opacity-100">
-          <a href="https://twitter.com/jamieriksson">
-            <img src={twitter} className="h-6 pl-1" alt="twitter logo"></img>
-          </a>
-        </li>
-        <li className="mt-1 opacity-50 hover:opacity-100">
-          <a href="https://www.facebook.com/jamie.eriksson.5/">
-            <img src={facebook} className="h-6 pl-1" alt="facebook logo"></img>
-          </a>
-        </li>
-      </ul>
-    );
-  }
-}
+// class Social extends React.Component {
+//   render() {
+//     return (
+//       <ul className="list-none font-light text-sm text-gray-600 p-3 md:p-10 md:pl-16">
+//         <li className="text-gray-500 font-normal text-sm uppercase mb-2">
+//           Social
+//         </li>
+//         <li className="mt-1 opacity-50 hover:opacity-100">
+//           <a href="https://www.instagram.com/jamieriksson/?hl=en">
+//             <img
+//               src={instagram}
+//               className="h-6 pl-1"
+//               alt="instagram logo"
+//             ></img>
+//           </a>
+//         </li>
+//         <li className="mt-1 opacity-50 hover:opacity-100">
+//           <a href="https://twitter.com/jamieriksson">
+//             <img src={twitter} className="h-6 pl-1" alt="twitter logo"></img>
+//           </a>
+//         </li>
+//         <li className="mt-1 opacity-50 hover:opacity-100">
+//           <a href="https://www.facebook.com/jamie.eriksson.5/">
+//             <img src={facebook} className="h-6 pl-1" alt="facebook logo"></img>
+//           </a>
+//         </li>
+//       </ul>
+//     );
+//   }
+// }
 
 class Footer extends React.Component {
   render() {
