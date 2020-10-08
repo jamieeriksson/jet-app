@@ -67,7 +67,6 @@ class Footer extends React.Component {
               </Link>
             </li>
           </ul>
-          {/* <Social /> */}
           <ul className="list-none font-light text-sm text-gray-600 p-3 md:p-10 md:pl-16">
             <li className="text-gray-500 font-normal text-sm uppercase mb-1">
               Contact
