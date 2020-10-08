@@ -85,7 +85,7 @@ class ContactForm extends React.Component {
     // Email validation
     if (!email) {
       formIsValid = false;
-      errors["email"] = "Please enter a name";
+      errors["email"] = "Please enter an email";
     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(email)) {
       errors["email"] = "Please enter a valid email";
     }
@@ -110,36 +110,39 @@ class ContactForm extends React.Component {
     return (
       <form className="font-semibold">
         <div className="flex flex-wrap">
-          <label>
-            Name: <br />
-            <input
-              name="name"
-              type="text"
-              value={this.state.name}
-              onChange={this.handleChange.bind(this, "name")}
-              placeholder="Your name"
-              className="mt-1 mr-10 p-1 w-64 text-gray-dark shadow-md border-gray-dark rounded border border-opacity-25 bg-gray-light"
-            />
-          </label>
-          <label>
-            Email: <br />
-            <input
-              name="email"
-              type="text"
-              value={this.state.email}
-              onChange={this.handleChange.bind(this, "email")}
-              placeholder="youremail@example.com"
-              className="mt-1 p-1 w-64 text-gray-dark shadow-md border-gray-dark rounded border border-opacity-25 bg-gray-light"
-            />
-            <br />
-          </label>
-          <div className="w-full"></div>
-          <p className="text-red text-sm font-thin mt-1 mr-10 w-64">
-            {this.state.errors["name"]}
-          </p>
-          <p className="text-red text-sm font-thin mt-1 w-64">
-            {this.state.errors["email"]}
-          </p>
+          <div className="mt-2 md:mt-0">
+            <label>
+              Name: <br />
+              <input
+                name="name"
+                type="text"
+                value={this.state.name}
+                onChange={this.handleChange.bind(this, "name")}
+                placeholder="Your name"
+                className="mt-1 mr-10 p-1 w-64 text-gray-dark shadow-md border-gray-dark rounded border border-opacity-25 bg-gray-light"
+              />
+            </label>
+            <p className="text-red text-sm font-thin mt-1 mr-10 w-64">
+              {this.state.errors["name"]}
+            </p>
+          </div>
+          <div className="mt-2 md:mt-0">
+            <label>
+              Email: <br />
+              <input
+                name="email"
+                type="text"
+                value={this.state.email}
+                onChange={this.handleChange.bind(this, "email")}
+                placeholder="youremail@example.com"
+                className="mt-1 p-1 w-64 text-gray-dark shadow-md border-gray-dark rounded border border-opacity-25 bg-gray-light"
+              />
+              <br />
+            </label>
+            <p className="text-red text-sm font-thin mt-1 w-64">
+              {this.state.errors["email"]}
+            </p>
+          </div>
         </div>
         <label className="mt-4 block">
           Subject: <br />
