@@ -1,7 +1,6 @@
 import React from "react";
 import "../tailwind.output.css";
 import ContactForm from "../contact/contact-form.js";
-import { Link } from "react-router-dom";
 
 class InterestForm extends React.Component {
   render() {
@@ -23,18 +22,6 @@ class InterestForm extends React.Component {
         </p>
         <div className="mt-6">
           <ContactForm />
-        </div>
-        <div className="mt-24 flex flex-col items-center">
-          <p className="font-title text-center text-2xl">
-            Unsure if you want to commit to a full month? Start with a 30 minute
-            initial consultation for $40.
-          </p>
-          <Link
-            to="/initial-consult"
-            className="h-12 mt-2 px-10 bg-red flex items-center text-gray-light shadow-md text-lg font-bold uppercase"
-          >
-            Sign Up Here
-          </Link>
         </div>
       </div>
     );

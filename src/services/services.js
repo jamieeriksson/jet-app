@@ -1,5 +1,6 @@
 import React from "react";
 import "../tailwind.output.css";
+import { Link } from "react-router-dom";
 import Footer from "../footer.js";
 import { ColorHeader, PageHeader } from "../template-headers.js";
 import ServicesOffered from "./services-offered.js";
@@ -46,6 +47,20 @@ function ServicesContent() {
         <path d="M0 0L1440 177V0H0Z" fill="#313131" />
       </svg>
       <InterestForm />
+      <div className="mt-8 mb-24 flex flex-col items-center">
+        <p className="font-title text-center text-2xl">
+          Unsure if you want to commit to a full month? Start with a{" "}
+          <span className="font-bold">
+            30 minute initial consultation for $40.
+          </span>
+        </p>
+        <Link
+          to="/initial-consult"
+          className="h-12 mt-2 px-10 bg-red flex items-center text-gray-light shadow-md text-lg font-bold uppercase"
+        >
+          Sign Up Here
+        </Link>
+      </div>
     </div>
   );
 }
