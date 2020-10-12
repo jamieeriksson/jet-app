@@ -13,6 +13,7 @@ class NavItem extends React.Component {
         id={`${this.props.id}`}
       >
         <Link
+          onClick={this.props.hideMenu}
           to={`/${this.props.link}`}
           className={`w-full p-3 text-center text-xl uppercase font-light transition duration-300 ease-in-out md:hover:${this.props.bg} md:w-28 md:text-sm`}
         >
@@ -99,6 +100,7 @@ class NavBar extends React.Component {
             bg={"bg-gray-300"}
             link={""}
             linkName={"Home"}
+            hideMenu={this.toggleMenu}
             transparent={this.state.scrolledDown}
           />
           <NavItem
@@ -106,6 +108,7 @@ class NavBar extends React.Component {
             bg={"bg-red"}
             link={"about"}
             linkName={"About"}
+            hideMenu={this.toggleMenu}
             transparent={this.state.scrolledDown}
           />
           <NavItem
@@ -113,6 +116,7 @@ class NavBar extends React.Component {
             bg={"bg-yellow"}
             link={"services"}
             linkName={"Services"}
+            hideMenu={this.toggleMenu}
             transparent={this.state.scrolledDown}
           />
           <NavItem
@@ -120,6 +124,7 @@ class NavBar extends React.Component {
             bg={"bg-teal-dark"}
             link={"contact"}
             linkName={"Contact"}
+            hideMenu={this.toggleMenu}
             transparent={this.state.scrolledDown}
           />
         </div>
