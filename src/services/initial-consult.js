@@ -414,8 +414,7 @@ function InitialConsultContent() {
           </h3>
           <div className="self-end w-48 h-6 bg-teal-bright mb-6"></div>
           <p className="self-start max-w-6xl text-xl">
-            Unsure if you want to commit to a full month of coaching? Start with
-            a{" "}
+            Not ready to sign up for a full month of coaching? Start with a{" "}
             <span className="font-title text-white text-shadow-md text-xl">
               30 minute initial consultation for $50.
             </span>
@@ -423,8 +422,8 @@ function InitialConsultContent() {
             <br />
             We will do a basic analysis of your current throwing mechanics and
             give you some simple feedback on where you could use improvement.
-            Then, you can decide if you want to move forward with a month of
-            1-on-1 coaching and personalized drills.
+            Then, you can decide afterwards if you want to move forward with a
+            month of 1-on-1 coaching and personalized drills.
             <br />
             <br />
             Fill out the form below to get started with your $50 initial
