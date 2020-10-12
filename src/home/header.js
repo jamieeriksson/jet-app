@@ -37,7 +37,7 @@ class HomeHeader extends React.Component {
             <div className="w-32 h-6 bg-teal-bright"></div>
             <h1 className="font-title text-4xl md:text-5xl uppercase text-shadow-sm">
               Up Your Throwing, <br />
-              Up Your LAME.
+              Up Your Game.
             </h1>
             <h2 className="text-base font-light text-shadow-sm md:text-lg">
               The first ultimate frisbee throwing coaching service.
