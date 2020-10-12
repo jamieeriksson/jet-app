@@ -174,7 +174,7 @@ class InitialConsultForm extends React.Component {
 
   render() {
     return (
-      <form className="font-semibold mt-8 max-w-3xl w-full">
+      <form className="font-semibold max-w-3xl w-full">
         <div className="flex flex-wrap">
           <div className="mt-2 md:mt-0">
             <label>
@@ -429,7 +429,9 @@ function InitialConsultContent() {
             Fill out the form below to get started with your $50 initial
             consultation.
           </p>
-          <InitialConsultForm />
+          <div className="mt-10 self-center">
+            <InitialConsultForm />
+          </div>
           <div className="ml-4 mt-12 max-w-3xl"></div>
         </div>
       </div>
