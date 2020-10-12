@@ -15,8 +15,8 @@ function ContactContent() {
           </h3>
           <div className="self-end w-48 h-6 bg-teal-bright mb-6"></div>
           <p className="max-w-2xl self-end text-right text-lg">
-            If you're interested in our services, have questions, or want to
-            talk about anything else, fill out the form below or email us at{" "}
+            If you're interested in our services, or have any questions, fill
+            out the form below or send an email to{" "}
             <a
               href="mailto: jamieeriksson@gmail.com"
               target="_blank"
