@@ -44,7 +44,7 @@ class HomeHeader extends React.Component {
             </h2>
           </div>
         </div>
-        <div className="flex justify-center z-10 max-w-6xl mb-24 w-full self-center md:ml-64 md:justify-start">
+        <div className="flex justify-center z-10 max-w-6xl mb-20 w-full self-center md:ml-64 md:justify-start">
           <button className="-mt-4 w-48 bg-teal-dark">
             <h3 className="font-title text-xl uppercase p-3 text-gray-200 text-center">
               Sign Up
