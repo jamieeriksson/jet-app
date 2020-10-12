@@ -344,7 +344,7 @@ class InitialConsultForm extends React.Component {
         <div className="mt-8 block">
           <label>
             Do you have the ability to film yourself throwing? (We will contact
-            you with more details on how best to do this) <br />
+            you later with more details on how best to do this) <br />
             <label className="font-thin text-lg">
               <input
                 name="ableToFilm"
@@ -409,7 +409,7 @@ function InitialConsultContent() {
       <PageHeader title={""} />
       <div className="bg-gray-dark -mt-2 z-0">
         <div className="p-6 pb-24 max-w-6xl container flex flex-col text-gray-light">
-          <h3 className="self-end font-title uppercase text-3xl">
+          <h3 className="self-end text-right font-title uppercase text-3xl">
             30 minute Initial Consultation
           </h3>
           <div className="self-end w-48 h-6 bg-teal-bright mb-6"></div>
