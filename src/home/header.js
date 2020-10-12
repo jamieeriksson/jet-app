@@ -1,5 +1,6 @@
 import React from "react";
 import "../tailwind.output.css";
+import { Link } from "react-router-dom";
 import throwingPlaceholder from "../assets/placeholder.png";
 import throwingVideo from "../assets/Slomo-Throwing-Short-6.m4v";
 
@@ -45,11 +46,11 @@ class HomeHeader extends React.Component {
           </div>
         </div>
         <div className="flex justify-center z-10 max-w-6xl mb-20 w-full self-center md:ml-64 md:justify-start">
-          <button className="-mt-4 w-48 bg-teal-dark">
+          <Link to="/contact" className="-mt-4 w-48 bg-teal-dark">
             <h3 className="font-title text-xl uppercase p-3 text-gray-200 text-center">
               Sign Up
             </h3>
-          </button>
+          </Link>
         </div>
       </div>
     );

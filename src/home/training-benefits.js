@@ -102,14 +102,12 @@ function TrainingBenefits() {
         <h6 className="mt-16 self-end font-title text-gray-light opacity-75">
           Interested in getting coached?
         </h6>
-        <div className="h-12 self-end bg-teal-dark flex items-center">
-          <Link
-            to="/services"
-            className="text-gray-light text-lg uppercase mx-10"
-          >
-            See our services
-          </Link>
-        </div>
+        <Link
+          to="/services"
+          className="h-12 self-end bg-teal-dark flex items-center text-gray-light text-lg uppercase px-10"
+        >
+          See our services
+        </Link>
       </div>
     </div>
   );

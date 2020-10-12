@@ -1,5 +1,6 @@
 import React from "react";
 import "../tailwind.output.css";
+import { Link } from "react-router-dom";
 import Footer from "../footer.js";
 import AboutUsSections from "./about-sections.js";
 import TheTeam from "./the-team.js";
@@ -44,6 +45,20 @@ function AboutContent() {
         <path d="M1440 0L0 124V0H1440Z" fill="#314E4A" />
         <path d="M0 0L1440 177V0H0Z" fill="#313131" />
       </svg>
+      <div className="mt-24 flex flex-col items-center">
+        <p className="font-title text-center text-2xl">
+          Want to see what we're about? Start with a no strings attached{" "}
+          <span className="font-bold">
+            30 minute initial consultation for $40.
+          </span>
+        </p>
+        <Link
+          to="/initial-consult"
+          className="h-12 mt-2 px-10 bg-red flex items-center text-gray-light shadow-md text-lg font-bold uppercase"
+        >
+          Sign Up Here
+        </Link>
+      </div>
     </div>
   );
 }

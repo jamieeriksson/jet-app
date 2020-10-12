@@ -1,5 +1,6 @@
 import React from "react";
 import "../tailwind.output.css";
+import { Link } from "react-router-dom";
 import HomeHeader from "./header.js";
 import OurPhilosophy from "./our-philosophy.js";
 import ShortAbout from "./short-about.js";
@@ -41,6 +42,28 @@ class Home extends React.Component {
         </svg>
         <TrainingBenefits />
         <div className="flex-grow-1 h-16 bg-gray-dark"></div>
+        <svg
+          viewBox="0 0 1440 177"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 5.75185e-06L1440 115V5.75185e-06H0Z" fill="#314E4A" />
+          <path d="M1440 0L0 177V0H1440Z" fill="#313131" />
+        </svg>
+        <div className="my-24 flex flex-col items-center">
+          <p className="font-title text-center text-2xl">
+            Want to try us out? Start with a no strings attached{" "}
+            <span className="font-bold">
+              30 minute initial consultation for $40.
+            </span>
+          </p>
+          <Link
+            to="/initial-consult"
+            className="h-12 mt-2 px-10 bg-red flex items-center text-gray-light shadow-md text-lg font-bold uppercase"
+          >
+            Sign Up Here
+          </Link>
+        </div>
         <Footer />
       </div>
     );
