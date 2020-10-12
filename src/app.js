@@ -8,6 +8,7 @@ import Home from "./home/home.js";
 import About from "./about/about.js";
 import Services from "./services/services.js";
 import Contact from "./contact/contact.js";
+import InitialConsult from "./services/initial-consult.js";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -27,7 +28,11 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home}></Route>
         <Route path="/about" component={About}></Route>
-        <Route path="/services" component={Services}></Route>
+        <Route path="/services" exact component={Services}></Route>
+        <Route
+          path="/services/initial-consult"
+          component={InitialConsult}
+        ></Route>
         <Route path="/contact" component={Contact}></Route>
       </Switch>
     </Router>
