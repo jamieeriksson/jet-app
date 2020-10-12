@@ -406,7 +406,7 @@ class InitialConsultForm extends React.Component {
 function InitialConsultContent() {
   return (
     <div className="z-10">
-      <PageHeader title={"Services"} />
+      <PageHeader title={""} />
       <div className="bg-gray-dark -mt-2 z-0">
         <div className="p-6 pb-24 max-w-6xl container flex flex-col text-gray-light">
           <h3 className="self-end font-title uppercase text-3xl">

@@ -28,11 +28,8 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home}></Route>
         <Route path="/about" component={About}></Route>
-        <Route path="/services" exact component={Services}></Route>
-        <Route
-          path="/services/initial-consult"
-          component={InitialConsult}
-        ></Route>
+        <Route path="/services" component={Services}></Route>
+        <Route path="/initial-consult" component={InitialConsult}></Route>
         <Route path="/contact" component={Contact}></Route>
       </Switch>
     </Router>
