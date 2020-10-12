@@ -27,7 +27,7 @@ class InterestForm extends React.Component {
         <div className="mt-24 flex flex-col items-center">
           <p className="font-title text-center text-2xl">
             Unsure if you want to commit to a full month? Start with a 30 minute
-            initial consultation for $50.
+            initial consultation for $40.
           </p>
           <Link
             to="/initial-consult"

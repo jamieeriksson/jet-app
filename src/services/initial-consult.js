@@ -416,7 +416,7 @@ function InitialConsultContent() {
           <p className="self-start max-w-6xl text-xl">
             Not ready to sign up for a full month of coaching? Start with a{" "}
             <span className="font-title text-white text-shadow-md text-xl">
-              30 minute initial consultation for $50.
+              30 minute initial consultation for $40.
             </span>
             <br />
             <br />
@@ -426,7 +426,7 @@ function InitialConsultContent() {
             month of 1-on-1 coaching and personalized drills.
             <br />
             <br />
-            Fill out the form below to get started with your $50 initial
+            Fill out the form below to get started with your $40 initial
             consultation.
           </p>
           <div className="mt-10 self-center">
