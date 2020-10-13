@@ -1,11 +1,10 @@
 import React from "react";
 import "../tailwind.output.css";
-// import { Link } from "react-router-dom";
 import Footer from "../footer.js";
 import { ColorHeader, PageHeader } from "../template-headers.js";
 import ThrowingClinics from "./throwing-clinics.js";
 import SafetyMeasures from "./safety-measures.js";
-import Benefits from "./benefits.js";
+import ClinicBenefits from "./clinic-benefits.js";
 import ClinicInterest from "./clinic-interest.js";
 
 function ClinicsContent() {
@@ -36,7 +35,7 @@ function ClinicsContent() {
       </svg>
 
       <div className="bg-gray-dark -mt-2 z-0">
-        <Benefits />
+        <ClinicBenefits />
       </div>
       <svg
         viewBox="0 0 1440 177"
