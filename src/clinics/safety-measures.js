@@ -22,41 +22,37 @@ function SafetyMeasures() {
       </div>
 
       <div className="self-center flex flex-col font-title text-lg mx-12 w-full md:max-w-3xl lg:max-w-4xl">
-        <div className="pl-4 py-1 my-2 h-16 flex place-items-center bg-gray-54 shadow-md">
-          <div className="bg-red w-1 h-10"></div>
-          <p className="px-4">
+        <div className="p-4 my-2 flex place-items-center bg-gray-54 shadow-md">
+          <p className="px-4 py-2 border-l-4 border-red">
             Each hour will have a maximum of 2-4 people to reduce interactions
             between people.
           </p>
         </div>
-        <div className="pl-4 py-1 my-2 h-16 flex place-items-center bg-gray-54 shadow-md">
-          <div className="bg-yellow w-1 h-10"></div>
-          <p className="px-4">There is no need to share equipment.</p>
+        <div className="p-4 my-2 flex place-items-center bg-gray-54 shadow-md">
+          <p className="px-4 py-2 border-l-4 border-yellow">
+            There is no need to share equipment.
+          </p>
         </div>
-        <div className="pl-4 py-1 my-2 h-16 flex place-items-center bg-gray-54 shadow-md">
-          <div className="bg-teal-bright w-1 h-10"></div>
-          <p className="px-4">
+        <div className="p-4 my-2 flex place-items-center bg-gray-54 shadow-md">
+          <p className="px-4 py-2 border-l-4 border-teal-bright">
             All drills and learning can be done without a throwing partner, if
             desired.
           </p>
         </div>
-        <div className="pl-4 py-1 my-2 h-16 flex place-items-center bg-gray-54 shadow-md">
-          <div className="bg-red w-1 h-10"></div>
-          <p className="px-4">
+        <div className="p-4 my-2 flex place-items-center bg-gray-54 shadow-md">
+          <p className="px-4 py-2 border-l-4 border-red">
             Participants will be able to maintain at least 6 feet of distance
             from other people.
           </p>
         </div>
-        <div className="pl-4 py-1 my-2 h-16 flex place-items-center bg-gray-54 shadow-md">
-          <div className="bg-yellow w-1 h-10"></div>
-          <p className="px-4">
+        <div className="p-4 my-2 flex place-items-center bg-gray-54 shadow-md">
+          <p className="px-4 py-2 border-l-4 border-yellow">
             The clinic will be hosted outside, or in a well-ventilated space,
             and masks will be required.
           </p>
         </div>
-        <div className="pl-4 py-1 my-2 h-16 flex place-items-center bg-gray-54 shadow-md">
-          <div className="bg-teal-bright w-1 h-10"></div>
-          <p className="px-4">
+        <div className="p-4 my-2 flex place-items-center bg-gray-54 shadow-md">
+          <p className="px-4 py-2 border-l-4 border-teal-bright">
             Any provided or shared discs which will be sanitized before and
             after each session.
           </p>
