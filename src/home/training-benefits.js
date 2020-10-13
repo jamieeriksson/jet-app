@@ -99,7 +99,7 @@ function TrainingBenefits() {
             />
           </div>
         </div>
-        <h6 className="mt-16 self-end font-title text-gray-light opacity-75">
+        <h6 className="mt-16 mb-1 self-end font-title text-gray-light opacity-75">
           Interested in getting coached?
         </h6>
         <Link
