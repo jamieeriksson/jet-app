@@ -28,7 +28,7 @@ class ClinicsContent extends React.Component {
           <div className="flex flex-col pt-4 pb-24">
             <button
               onClick={this.handleScrollClick}
-              className="mx-6 h-16 md:h-12 mt-2 px-10 self-center bg-yellow flex items-center text-gray-light shadow-md text-lg font-bold uppercase"
+              className="mx-6 h-16 md:h-12 mt-2 px-10 self-center bg-yellow flex items-center text-gray-light shadow-md text-lg font-bold uppercase focus:outline-none"
             >
               <span className="text-shadow-sm">Contact us about a clinic</span>
             </button>
