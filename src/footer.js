@@ -66,6 +66,11 @@ class Footer extends React.Component {
               </Link>
             </li>
             <li>
+              <Link to="/clinics" className="hover:text-gray-400">
+                Clinics
+              </Link>
+            </li>
+            <li>
               <Link to="/contact" className="hover:text-gray-400">
                 Contact
               </Link>
