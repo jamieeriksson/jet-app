@@ -3,7 +3,7 @@ import "../tailwind.output.css";
 
 function Benefits() {
   return (
-    <div className="self-center flex flex-col max-w-sm px-12 md:max-w-6xl md:flex-row font-sans text-gray-light">
+    <div className="self-center flex flex-col max-w-sm md:px-12 md:max-w-6xl md:flex-row font-sans text-gray-light">
       <div className="my-6 md:my-12">
         <h3 className="font-title text-2xl uppercase">
           What we can help you with
