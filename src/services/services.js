@@ -65,15 +65,14 @@ function ServicesContent() {
         </Link>
 
         <svg
-          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 177"
           fill="none"
-          height="177"
-          width="1440"
+          xmlns="http://www.w3.org/2000/svg"
         >
           <path d="M0 177l1440-91v91z" fill="#314e4a" />
           <path d="M1440 177L0 0v177z" fill="#313131" />
         </svg>
-        <div className="bg-gray-dark -mt-2 z-0">
+        <div className="bg-gray-dark w-full -mt-2 z-0">
           <ClinicRedirect />
         </div>
       </div>
