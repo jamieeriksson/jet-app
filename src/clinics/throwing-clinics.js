@@ -28,8 +28,8 @@ function ThrowingClinic() {
         color="#EEEEEE"
         className="self-center"
       />
-      <div className="flex flex-col md:flex-row justify-center max-w-5xl w-full self-center">
-        <div className="pt-8 px-10 flex-1">
+      <div className="md:mb-6 flex flex-col md:flex-row justify-center max-w-5xl w-full self-center">
+        <div className="py-4 md:pb-0 md:pt-8 px-10 flex-1">
           <h4 className="font-title text-center">Multiple Time Slots</h4>
           <p className="my-2 text-center">
             For the entire weekend we will host multiple 1 to 1.5 hour time
@@ -38,7 +38,7 @@ function ThrowingClinic() {
             coaching during their session.
           </p>
         </div>
-        <div className="pt-8 px-10 flex-1 border-gray-light border-t md:border-t-0 md:border-l">
+        <div className="py-4 md:pb-0 md:pt-8 px-10 flex-1 border-gray-light border-t md:border-t-0 md:border-l">
           <h4 className="font-title text-center">Analysis and Drills</h4>
           <p className="my-2 text-center">
             During each session we will assess players’ throwing form and take
@@ -46,7 +46,7 @@ function ThrowingClinic() {
             build more efficient mechanics.
           </p>
         </div>
-        <div className="pt-8 px-10 flex-1 border-gray-light border-t md:border-t-0 md:border-l">
+        <div className="py-4 md:pb-0 md:pt-8 px-10 flex-1 border-gray-light border-t md:border-t-0 md:border-l">
           <h4 className="font-title text-center">Player Benefit</h4>
           <p className="my-2 text-center">
             Players will gain new knowledge about throwing mechanics, learn
