@@ -1,6 +1,6 @@
 import React from "react";
 import "../tailwind.output.css";
-import ContactForm from "../contact/contact-form.js";
+import ClinicForm from "./clinic-form.js";
 
 class ClinicInterest extends React.Component {
   render() {
@@ -21,7 +21,7 @@ class ClinicInterest extends React.Component {
           </a>
         </p>
         <div className="mt-6">
-          <ContactForm />
+          <ClinicForm />
         </div>
       </div>
     );
