@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function ClinicRedirect() {
   return (
-    <div className="p-6 pb-16 md:pb-24 max-w-6xl container flex flex-col text-gray-light">
+    <div className="p-6 py-16 md:py-24 max-w-6xl container flex flex-col text-gray-light">
       <p className="mb-2 ml-2 font-title uppercase text-2xl">
         Searching for group services? Are you...
       </p>
