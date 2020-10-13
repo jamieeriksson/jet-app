@@ -18,11 +18,11 @@ function ContactContent() {
             If you're interested in our services, or have any questions, fill
             out the form below or send an email to{" "}
             <a
-              href="mailto: jamieeriksson@gmail.com"
+              href="mailto: contact@jethrowing.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              jamieeriksson@gmail.com
+              contact@jethrowing.com
             </a>
           </p>
           <div className="ml-4 mt-12 max-w-3xl">

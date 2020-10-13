@@ -13,11 +13,11 @@ class InterestForm extends React.Component {
         <p className="font-title text-lg">
           Fill out the form below or send an email to{" "}
           <a
-            href="mailto: jamieeriksson@gmail.com"
+            href="mailto: contact@jethrowing.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            jamieeriksson@gmail.com
+            contact@jethrowing.com
           </a>
         </p>
         <div className="mt-6">
