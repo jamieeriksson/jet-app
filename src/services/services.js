@@ -7,6 +7,7 @@ import ServicesOffered from "./services-offered.js";
 import Philosophy from "./philosophy.js";
 import OurProcess from "./our-process.js";
 import InterestForm from "./interest-form.js";
+import ClinicRedirect from "./clinic-redirect.js";
 
 function ServicesContent() {
   return (
@@ -23,6 +24,7 @@ function ServicesContent() {
         <path d="M1440 115V0H0V115H1440Z" fill="#314E4A" />
         <path d="M0 0L1440 115V0H0Z" fill="#313131" />
       </svg>
+
       <div className="bg-teal -mt-2 z-0">
         <Philosophy />
       </div>
@@ -46,8 +48,9 @@ function ServicesContent() {
         <path d="M1440 0L0 124V0H1440Z" fill="#314E4A" />
         <path d="M0 0L1440 177V0H0Z" fill="#313131" />
       </svg>
+
       <InterestForm />
-      <div className="mt-8 mb-24 flex flex-col items-center">
+      <div className="mt-8 flex flex-col items-center">
         <p className="font-title text-center text-2xl">
           Unsure if you want to commit to a full month? Start with a{" "}
           <span className="font-bold">
@@ -56,10 +59,22 @@ function ServicesContent() {
         </p>
         <Link
           to="/initial-consult"
-          className="h-12 mt-2 px-10 bg-red flex items-center text-gray-light shadow-md text-lg font-bold uppercase"
+          className="h-12 mt-2 mb-10 px-10 bg-red flex items-center text-gray-light shadow-md text-lg font-bold uppercase"
         >
           Sign Up Here
         </Link>
+
+        <svg
+          viewBox="0 0 1440 177"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 177l1440-91v91z" fill="#314e4a" />
+          <path d="M1440 177L0 0v177z" fill="#313131" />
+        </svg>
+        <div className="bg-gray-dark w-full -mt-2 z-0">
+          <ClinicRedirect />
+        </div>
       </div>
     </div>
   );
@@ -71,7 +86,6 @@ function Services() {
       <ColorHeader />
       <div className="w-screen h-32 md:h-16 md:hidden bg-light-gray"></div>
       <ServicesContent />
-      <div className="flex-grow-1 md:h-16"></div>
       <Footer />
     </div>
   );

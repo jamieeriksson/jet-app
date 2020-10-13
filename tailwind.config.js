@@ -25,6 +25,7 @@ module.exports = {
         light: "#EEEEEE",
         medium: "#7B7B7B",
         dark: "#313131",
+        54: "#545454",
         100: "#f7fafc",
         200: "#edf2f7",
         300: "#e2e8f0",
