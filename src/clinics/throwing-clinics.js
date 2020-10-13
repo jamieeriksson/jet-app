@@ -59,10 +59,10 @@ function ThrowingClinic() {
 
       <video
         autoPlay
-        loop
+        controls
         muted
         poster={analysisPlaceholder}
-        className="max-w-2xl w-full mt-8 self-center"
+        className="max-w-2xl w-full mt-8 self-center outline-none"
       >
         <source src={huckAnalysis} type="video/mp4"></source>
       </video>
