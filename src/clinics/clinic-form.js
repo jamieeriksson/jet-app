@@ -25,19 +25,19 @@ class ClinicForm extends React.Component {
     let valid = this.handleValidation();
 
     if (valid) {
-      const { name, email, subject, message } = this.state;
+      const { name, email, team, subject, message } = this.state;
       let templateParams = {
         user_name: name,
         to_name: "jamieeriksson@gmail.com",
         user_email: email,
         subject: subject,
-        message_html: message,
+        message_html: `Team/Organization: ${team} , Message: ${message}`,
       };
 
       emailjs
         .send(
           "jet_contact_service",
-          "jet_clinic_template",
+          "jet_contact_template",
           templateParams,
           "user_xGg5HzJ2XhOMaAS6kYTbE"
         )
