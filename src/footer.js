@@ -78,12 +78,12 @@ class Footer extends React.Component {
             </li>
             <li>
               <a
-                href="mailto: jamieeriksson@gmail.com"
+                href="mailto: contact@jethrowing.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-400"
               >
-                jamieeriksson@gmail.com
+                contact@jethrowing.com
               </a>
             </li>
             <Social />
