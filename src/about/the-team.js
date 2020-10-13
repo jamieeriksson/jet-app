@@ -26,8 +26,8 @@ class TheTeam extends React.Component {
               passion for learning more about proper throwing technique and
               refining her throwing skills. This perseverance and dedication
               helped her make the team rosters for Texas Showdown, the elite
-              women's club team in Texas; Public Enemy, the elite mixed team
-              based out of DFW; and Austin Torch, the first Texas women's
+              women's club team in Texas; Dallas Public Enemy, the elite mixed
+              team based out of DFW; and Austin Torch, the first Texas women's
               professional ultimate team. Jamie brings a creative, dedicated,
               and detailed approach to the skill development of those she
               coaches.
@@ -42,9 +42,10 @@ class TheTeam extends React.Component {
               He currently coaches Dallas Public Enemy and the Western Ultimate
               League's Arizona Sidewinders. Harrison won Ultiworld's 2nd
               Runner-Up Coach of the Year for the 2019 Mixed division after
-              coaching the team, who wasn't expected to qualify for Nationals,
-              to a 7th place finish. He brings a modern and intelligent approach
-              to ultimate training and skill development.
+              coaching Public Enemy, who wasn't expected to qualify for
+              Nationals, to a 7th place finish. He brings a modern and
+              intelligent approach to ultimate training and throwing skills
+              development.
             </p>
           </div>
           <img
