@@ -10,6 +10,7 @@ import Services from "./services/services.js";
 import Contact from "./contact/contact.js";
 import InitialConsult from "./services/initial-consult.js";
 import Clinics from "./clinics/clinics.js";
+import NoMatch from "./not-found/not-found.js";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -33,6 +34,7 @@ function App() {
         <Route path="/initial-consult" component={InitialConsult}></Route>
         <Route path="/clinics" component={Clinics}></Route>
         <Route path="/contact" component={Contact}></Route>
+        <Route component={NoMatch} />
       </Switch>
     </Router>
   );
