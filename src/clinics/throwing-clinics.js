@@ -67,7 +67,7 @@ function ThrowingClinic() {
         <source src={huckAnalysis} type="video/mp4"></source>
       </video>
 
-      <button className="h-12 mt-2 px-10 self-center bg-yellow flex items-center text-gray-light shadow-md text-lg font-bold uppercase">
+      <button className="h-16 md:h-12 mt-2 px-10 self-center bg-yellow flex items-center text-gray-light shadow-md text-lg font-bold uppercase">
         <span className="text-shadow-sm">Contact us about a clinic</span>
       </button>
     </div>
