@@ -9,7 +9,7 @@ import { faUsers } from "@fortawesome/free-solid-svg-icons";
 
 function ThrowingClinic() {
   return (
-    <div className="p-6 pb-24 max-w-5xl container flex flex-col text-gray-light">
+    <div className="p-6 max-w-5xl container flex flex-col text-gray-light">
       <h2 className="text-right uppercase font-title text-4xl mt-4">
         Throwing Clinics
       </h2>
@@ -62,14 +62,10 @@ function ThrowingClinic() {
         loop
         muted
         poster={analysisPlaceholder}
-        className="max-w-2xl w-full my-8 self-center"
+        className="max-w-2xl w-full mt-8 self-center"
       >
         <source src={huckAnalysis} type="video/mp4"></source>
       </video>
-
-      <button className="h-16 md:h-12 mt-2 px-10 self-center bg-yellow flex items-center text-gray-light shadow-md text-lg font-bold uppercase">
-        <span className="text-shadow-sm">Contact us about a clinic</span>
-      </button>
     </div>
   );
 }
