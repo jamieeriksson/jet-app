@@ -100,24 +100,24 @@ class NavBar extends React.Component {
           <NavItem
             id={"nav-link1"}
             bg={"bg-gray-300"}
-            link={""}
-            linkName={"Home"}
-            hideMenu={this.toggleMenu}
-            transparent={this.state.scrolledDown}
-          />
-          <NavItem
-            id={"nav-link2"}
-            bg={"bg-red"}
             link={"about"}
             linkName={"About"}
             hideMenu={this.toggleMenu}
             transparent={this.state.scrolledDown}
           />
           <NavItem
-            id={"nav-link3"}
-            bg={"bg-yellow"}
+            id={"nav-link2"}
+            bg={"bg-red"}
             link={"services"}
             linkName={"Services"}
+            hideMenu={this.toggleMenu}
+            transparent={this.state.scrolledDown}
+          />
+          <NavItem
+            id={"nav-link3"}
+            bg={"bg-yellow"}
+            link={"clinics"}
+            linkName={"Clinics"}
             hideMenu={this.toggleMenu}
             transparent={this.state.scrolledDown}
           />
