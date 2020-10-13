@@ -155,7 +155,7 @@ class ClinicForm extends React.Component {
           </div>
         </div>
 
-        <label className="mt-4 block">
+        <label className="mt-4 block max-w-2xl">
           What team or organization are you a part of: <br />
           <input
             name="team"
@@ -163,7 +163,7 @@ class ClinicForm extends React.Component {
             value={this.state.subject}
             onChange={this.handleChange.bind(this, "team")}
             placeholder="Interest in Throwing Coaching"
-            className="mt-1 p-1 max-w-2xl w-full text-gray-dark shadow-md border-gray-dark rounded border border-opacity-25 bg-gray-light"
+            className="mt-1 p-1 w-full text-gray-dark shadow-md border-gray-dark rounded border border-opacity-25 bg-gray-light"
           />
           <p className="text-red text-sm font-thin mt-1">
             {this.state.errors["team"]}
