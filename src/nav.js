@@ -53,7 +53,9 @@ class NavBar extends React.Component {
   }
 
   toggleMenu() {
-    this.setState({ menuIsOpen: !this.state.menuIsOpen });
+    if (window.innerWidth < 768) {
+      this.setState({ menuIsOpen: !this.state.menuIsOpen });
+    }
   }
 
   render() {
