@@ -1,9 +1,7 @@
 import React from "react";
 import "../tailwind.output.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRainbow } from "@fortawesome/free-solid-svg-icons";
 import { faSitemap } from "@fortawesome/free-solid-svg-icons";
-import { faChalkboardTeacher } from "@fortawesome/free-solid-svg-icons";
 
 class ShortAbout extends React.Component {
   render() {
