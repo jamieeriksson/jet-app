@@ -47,10 +47,8 @@ function AboutContent() {
       </svg>
       <div className="mt-24 flex flex-col items-center">
         <p className="font-title text-center text-2xl">
-          Want to see what we're about? Start with a no strings attached{" "}
-          <span className="font-bold">
-            30 minute initial consultation for $40.
-          </span>
+          Want to see what we're about? Start with a{" "}
+          <span className="font-bold">$40 one time video consultation.</span>
         </p>
         <Link
           to="/initial-consult"

@@ -53,9 +53,7 @@ function ServicesContent() {
       <div className="mt-8 flex flex-col items-center">
         <p className="font-title text-center text-2xl">
           Unsure if you want to commit to a full month? Start with a{" "}
-          <span className="font-bold">
-            30 minute initial consultation for $40.
-          </span>
+          <span className="font-bold">$40 one time video consultation.</span>
         </p>
         <Link
           to="/initial-consult"
