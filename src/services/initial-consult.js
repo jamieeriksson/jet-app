@@ -53,7 +53,7 @@ class InitialConsultForm extends React.Component {
         user_name: name,
         to_name: "jamieeriksson@gmail.com",
         user_email: email,
-        subject: `$50 Initial 30min Consultation - ${name}`,
+        subject: `$40 One Time Consultation - ${name}`,
         years_played: yearsPlayed,
         teams_played: teamsPlayed,
         throwing_level: throwingLevel,
@@ -410,20 +410,20 @@ function InitialConsultContent() {
       <div className="bg-gray-dark -mt-2 z-0">
         <div className="p-6 pb-24 max-w-6xl container flex flex-col text-gray-light">
           <h3 className="self-end text-right font-title uppercase text-3xl">
-            30 minute Initial Consultation
+            One Time Consultation
           </h3>
           <div className="self-end w-48 h-6 bg-teal-bright mb-6"></div>
           <p className="self-start max-w-6xl text-xl">
             Not ready to sign up for a full month of coaching? Start with a{" "}
             <span className="font-title text-white text-shadow-md text-xl">
-              30 minute initial consultation for $40.
+              $40 one time video consultation.
             </span>
             <br />
             <br />
-            We will do a basic analysis of your current throwing mechanics and
-            give you some simple feedback on where you could use improvement.
-            Then, you can decide afterwards if you want to move forward with a
-            month of 1-on-1 coaching and personalized drills.
+            We will do an initial analysis of your current throwing mechanics
+            and give you feedback on where you could use improvement. Then, you
+            can decide afterwards if you want to sign up for a month of
+            continuous 1-on-1 coaching and personalized drills.
             <br />
             <br />
             Fill out the form below to get started with your $40 initial

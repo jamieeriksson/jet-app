@@ -52,10 +52,8 @@ class Home extends React.Component {
         </svg>
         <div className="my-24 flex flex-col items-center">
           <p className="font-title text-center text-2xl">
-            Want to try us out? Start with a no strings attached{" "}
-            <span className="font-bold">
-              30 minute initial consultation for $40.
-            </span>
+            Want to try us out? Start with a{" "}
+            <span className="font-bold">$40 one time video consultation.</span>
           </p>
           <Link
             to="/initial-consult"
