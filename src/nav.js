@@ -29,6 +29,7 @@ class NavBar extends React.Component {
     super(props);
     this.state = { menuIsOpen: false, scrolledDown: false };
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.logoClick = this.logoClick.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
   }
 
@@ -52,7 +53,13 @@ class NavBar extends React.Component {
     }
   }
 
-  toggleMenu() {
+  logoClick() {
+    if (this.state.menuIsOpen === true) {
+      this.toggleMenu();
+    }
+  }
+
+  toggleMenu(e) {
     if (window.innerWidth < 768) {
       this.setState({ menuIsOpen: !this.state.menuIsOpen });
     }
@@ -82,6 +89,7 @@ class NavBar extends React.Component {
                 this.state.scrolledDown ? "bg-opacity-25" : ""
               } transition duration-1000 ease-in-out h-16 md:h-12 inline`}
               alt="logo"
+              onClick={this.logoClick}
             />
             <h2 className="hidden ml-1 md:inline">Jamie Eriksson Throwing</h2>
           </Link>
