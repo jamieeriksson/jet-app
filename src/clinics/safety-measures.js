@@ -53,8 +53,8 @@ function SafetyMeasures() {
         </div>
         <div className="p-4 my-2 flex place-items-center bg-gray-54 shadow-md transition duration-200 ease-in-out transform hover:scale-105">
           <p className="px-4 py-2 border-l-4 border-teal-bright">
-            Any provided or shared discs which will be sanitized before and
-            after each session.
+            Any provided or shared discs will be sanitized before and after each
+            session.
           </p>
         </div>
       </div>
