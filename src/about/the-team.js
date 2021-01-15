@@ -20,7 +20,7 @@ class TheTeam extends React.Component {
           <div className="flex flex-col ml-4 md:mr-10 justify-center">
             <h4 className="text-2xl">Jamie Eriksson</h4>
             <p className="font-light">
-              Jamie start playing competitive ultimate at UT-Dallas in August
+              Jamie started playing competitive ultimate at UT-Dallas in August
               2015. In January of 2016 she dedicated herself to throwing every
               day for 100 days in a row. From that point on, she developed a
               passion for learning more about proper throwing technique and
