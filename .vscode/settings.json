@@ -1,3 +1,39 @@
 {
-  "python.envFile": "${workspaceFolder}/backend/.env"
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "[svg]": {
+    "editor.tabSize": 2
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "eslint.packageManager": "yarn",
+  "eslint.validate": ["javascript"],
+  "git.autofetch": true,
+  "npm.packageManager": "yarn",
+  "python.analysis.extraPaths": ["backend"],
+  "python.envFile": "${workspaceFolder}/backend/.env",
+  "python.formatting.provider": "black",
+  "python.linting.enabled": true,
+  "python.sortImports.args": ["--src-path=${workspaceFolder}/backend"],
+  "python.terminal.activateEnvironment": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.testing.pytestArgs": ["backend", "--no-cov"],
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false
 }

@@ -1,4 +1,6 @@
+import datetime as dt
 import os
+
 import dj_database_url
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -6,7 +8,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 DEBUG = os.getenv("DJANGO_DEBUG") == "TRUE"
-ALLOWED_HOSTS = ["jethrowingapi.com", "localhost"]
+ALLOWED_HOSTS = ["jethrowingapi.com", "localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -14,8 +16,12 @@ ALLOWED_HOSTS = ["jethrowingapi.com", "localhost"]
 INSTALLED_APPS = [
     "django.contrib.auth",
     "django.contrib.contenttypes",
+    "django.contrib.sessions",
     "corsheaders",
     "rest_framework",
+    "rest_framework_simplejwt.token_blacklist",
+    "django_countries",
+    "phonenumber_field",
     "jet.profiles.apps.ProfilesConfig",
 ]
 
@@ -48,6 +54,11 @@ DATABASES = {"default": dj_database_url.config(conn_max_age=500)}
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
 
 
+# Users
+
+AUTH_USER_MODEL = "users.User"
+
+
 # Password validation
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -73,6 +84,17 @@ USE_TZ = True
 
 REST_FRAMEWORK = {
     "DEFAULT_RENDERER_CLASSES": ("rest_framework.renderers.JSONRenderer",),
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ),
+    "TEST_REQUEST_DEFAULT_FORMAT": "json",
+}
+
+# Simple JWT
+
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": dt.timedelta(minutes=5),
+    "REFRESH_TOKEN_LIFETIME": dt.timedelta(days=14),
 }
 
 
