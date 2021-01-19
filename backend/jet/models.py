@@ -9,4 +9,4 @@ class BaseModel(models.Model):
     modified_at = models.DateTimeField(auto_now=True)
 
     class Meta:
-        abstract = true
+        abstract = True

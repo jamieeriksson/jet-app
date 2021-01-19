@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt.token_blacklist",
     "django_countries",
     "phonenumber_field",
+    "jet.users.apps.UsersConfig",
     "jet.profiles.apps.ProfilesConfig",
 ]
 
