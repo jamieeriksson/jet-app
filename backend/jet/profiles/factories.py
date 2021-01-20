@@ -3,7 +3,7 @@ import datetime
 import factory
 import factory.django
 
-from ..models import Profile
+from jet.profiles.models import Profile
 
 
 class ProfileFactory(factory.django.DjangoModelFactory):

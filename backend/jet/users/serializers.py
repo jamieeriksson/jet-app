@@ -2,7 +2,7 @@ from django.utils import timezone
 from rest_framework import serializers
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
-from .models import User
+from jet.users.models import User
 
 
 class UserSerializer(serializers.ModelSerializer):

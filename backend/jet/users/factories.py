@@ -1,7 +1,7 @@
 import factory
 import factory.django
 
-from ..models import User
+from jet.users.models import User
 
 
 class UserFactory(factory.django.DjangoModelFactory):

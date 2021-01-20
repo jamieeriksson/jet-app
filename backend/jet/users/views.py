@@ -5,9 +5,13 @@ from rest_framework_simplejwt.exceptions import TokenError
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
-from .models import User
-from .permissions import UserPermission
-from .serializers import LogOutSerializer, UserSerializer, UserTokenObtainPairSerializer
+from jet.users.models import User
+from jet.users.permissions import UserPermission
+from jet.users.serializers import (
+    LogOutSerializer,
+    UserSerializer,
+    UserTokenObtainPairSerializer,
+)
 
 
 class UserViewSet(

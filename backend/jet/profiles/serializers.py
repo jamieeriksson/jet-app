@@ -1,7 +1,7 @@
 from django.core.exceptions import ValidationError
 from rest_framework import serializers
 
-from .models import Profile
+from jet.profiles.models import Profile
 
 
 class ProfileSerializer(serializers.ModelSerializer):
@@ -23,5 +23,6 @@ class ProfileSerializer(serializers.ModelSerializer):
             "teams_played_for",
             "funding_goal",
             "description",
+            "is_funded",
         ]
-        # read_only_fields = ["funding_current"]
+        read_only_fields = ["is_funded"]

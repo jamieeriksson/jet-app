@@ -1,9 +1,9 @@
 from django.contrib.auth.models import AnonymousUser
 from rest_framework import mixins, viewsets
 
-from .models import Profile
-from .permissions import IsOwnerOrReadOnly
-from .serializers import ProfileSerializer
+from jet.profiles.models import Profile
+from jet.profiles.permissions import IsOwnerOrReadOnly
+from jet.profiles.serializers import ProfileSerializer
 
 
 class ProfileViewSet(viewsets.ModelViewSet):

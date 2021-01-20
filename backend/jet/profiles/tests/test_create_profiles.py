@@ -1,10 +1,10 @@
 from rest_framework.test import APIClient
 
-from jet.users.tests.factories import UserFactory
+from jet.users.factories import UserFactory
 
+from ..factories import ProfileFactory
 from ..models import Profile
 from ..serializers import ProfileSerializer
-from .factories import ProfileFactory
 
 
 def test_user_can_create_profile():

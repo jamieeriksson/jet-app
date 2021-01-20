@@ -19,3 +19,4 @@ class Profile(BaseModel):
     funding_goal = models.DecimalField(max_digits=5, decimal_places=2)
     # funding_current = models.DecimalField(max_digits=5, decimal_places=2)
     description = models.TextField()
+    is_funded = models.BooleanField(default=False)

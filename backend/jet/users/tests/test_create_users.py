@@ -1,8 +1,8 @@
 from rest_framework.test import APIClient
 
+from ..factories import UserFactory
 from ..models import User
 from ..serializers import UserSerializer
-from .factories import UserFactory
 
 
 def test_can_create_user():
