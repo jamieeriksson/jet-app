@@ -15,7 +15,7 @@ module.exports = {
       yellow: "#E9C46A",
       teal: {
         bright: "#2A9D8F",
-        default: "#314E4A",
+        DEFAULT: "#314E4A",
         dark: "#264653",
       },
       black: "#000000",
@@ -91,6 +91,10 @@ module.exports = {
   variants: {
     filter: ["responsive"],
     backdropFilter: ["responsive"],
+    extend: {
+      display: ["group-hover", "group-focus", "focus-within"],
+      fontWeight: ["hover"],
+    },
   },
   plugins: [require("tailwindcss-filters"), require("tailwindcss-textshadow")],
 };

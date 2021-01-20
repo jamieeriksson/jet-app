@@ -36,7 +36,7 @@ function WhyTrain() {
       </div>
       <div className="flex-grow-1"></div>
       <div className="m-auto md:ml-auto font-sans text-lg text-gray-light">
-        <ul className="whitespace-no-wrap">
+        <ul className="whitespace-nowrap">
           <li className="py-3 md:py-4 pr-8 md:pr-16 pl-4 md:pl-8 border-b border-gray-light md:opacity-75 hover:opacity-100 transition duration-100 ease-in-out">
             <FontAwesomeIcon icon={faDumbbell} />
             <span className="pl-8 md:pl-12 lg:pl-24 text-sm md:text-base">

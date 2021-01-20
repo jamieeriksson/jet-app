@@ -20,7 +20,7 @@ function ServicesOffered() {
           <FontAwesomeIcon icon={faFilm} size="9x" color="#EEEEEE" />
         </div>
         <div className="flex flex-col items-center">
-          <h4 className="text-2xl mb-2">1-on-1 Consulting</h4>
+          <h4 className="text-2xl mb-2">1-on-1 Coaching</h4>
           <FontAwesomeIcon icon={faPeopleArrows} size="9x" color="#EEEEEE" />
         </div>
         <div className="flex flex-col items-center">

@@ -15,7 +15,7 @@ class NavItem extends React.Component {
         <Link
           onClick={this.props.hideMenu}
           to={`/${this.props.link}`}
-          className={`w-full p-3 text-center text-xl uppercase font-light transition duration-300 ease-in-out md:hover:${this.props.bg} md:w-28 md:text-sm`}
+          className={`w-full py-3 text-center text-xl uppercase font-light transition duration-300 ease-in-out md:hover:${this.props.bg} md:w-28 md:text-sm`}
         >
           {this.props.linkName}
         </Link>
@@ -113,19 +113,58 @@ class NavBar extends React.Component {
             hideMenu={this.toggleMenu}
             transparent={this.state.scrolledDown}
           />
-          <NavItem
+          {/* <NavItem
             id={"nav-link2"}
             bg={"bg-red"}
             link={"services"}
             linkName={"Services"}
             hideMenu={this.toggleMenu}
             transparent={this.state.scrolledDown}
-          />
+          /> */}
+
+          <div className={`flex md:w-28 group`} id="nav-link2">
+            <Link
+              onClick={this.toggleMenu}
+              to="/services"
+              className={`transition duration-1000 ease-in-out md:${
+                this.state.scrolledDown ? "bg-opacity-50" : ""
+              } relative z-50 bg-red w-full p-3 text-center text-xl uppercase font-light transition duration-300 ease-in-out md:hover:bg-red md:w-28 md:text-sm`}
+            >
+              Services
+            </Link>
+            <div
+              className={`z-40 absolute w-28 hidden group-hover:flex flex-col`}
+            >
+              <p className="h-12"></p>
+              <p
+                className={`w-full p-3 text-center text-xl uppercase font-light transition duration-300 ease-in-out bg-red md:${
+                  this.state.scrolledDown ? "bg-opacity-50" : "bg-opacity-100"
+                } md:hover:bg-opacity-100 md:w-28 md:text-sm`}
+              >
+                <Link to="/clinics">For Players</Link>
+              </p>
+              <p
+                className={`w-full p-3 text-center text-xl uppercase font-light transition duration-300 ease-in-out bg-red md:${
+                  this.state.scrolledDown ? "bg-opacity-50" : "bg-opacity-100"
+                } md:hover:bg-opacity-100 md:w-28 md:text-sm`}
+              >
+                <Link to="/clinics">Clinics</Link>
+              </p>
+              <p
+                className={`w-full p-3 text-center text-xl uppercase font-light transition duration-300 ease-in-out bg-red md:${
+                  this.state.scrolledDown ? "bg-opacity-50" : "bg-opacity-100"
+                } md:hover:bg-opacity-100 md:w-28 md:text-sm`}
+              >
+                <Link to="/clinics">For Coaches</Link>
+              </p>
+            </div>
+          </div>
+
           <NavItem
             id={"nav-link3"}
             bg={"bg-yellow"}
-            link={"clinics"}
-            linkName={"Clinics"}
+            link={"scholarship"}
+            linkName={"Scholarship"}
             hideMenu={this.toggleMenu}
             transparent={this.state.scrolledDown}
           />
