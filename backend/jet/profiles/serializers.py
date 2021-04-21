@@ -13,7 +13,7 @@ class ProfileSerializer(serializers.ModelSerializer):
             "id",
             "created_at",
             "modified_at",
-            "owner",
+            "owner",  # Need to hide?
             "name",
             "birthdate",
             "gender",

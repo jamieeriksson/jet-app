@@ -163,8 +163,8 @@ class NavBar extends React.Component {
           <NavItem
             id={"nav-link3"}
             bg={"bg-yellow"}
-            link={"scholarship"}
-            linkName={"Scholarship"}
+            link={"sponsorship"}
+            linkName={"Sponsorship"}
             hideMenu={this.toggleMenu}
             transparent={this.state.scrolledDown}
           />
