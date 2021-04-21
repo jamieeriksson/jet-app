@@ -53,7 +53,7 @@ class Home extends React.Component {
         <div className="my-24 flex flex-col items-center">
           <p className="font-title text-center text-2xl">
             Want to try us out? Start with a{" "}
-            <span className="font-bold">$40 one time video consultation.</span>
+            <span className="font-bold">$50 one time video consultation.</span>
           </p>
           <Link
             to="/initial-consult"
